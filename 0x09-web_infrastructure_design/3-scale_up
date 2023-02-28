@@ -1,0 +1,11 @@
+In this setup, we will be using two servers, one as the load balancer and the other as a cluster for the web server, application server, and database. The load balancer will be configured to balance the traffic between the two web servers.
+
+The reason for having separate servers for the web server, application server, and database is to ensure that each component can be scaled independently. This allows us to allocate resources as required, and avoid bottlenecks. For example, if we have more traffic coming in, we can scale up the web server without having to scale up the application server or database.
+
+The load balancer is required to balance the incoming traffic between the two web servers. It ensures that the requests are distributed evenly, so that one server is not overloaded while the other is underutilized. This improves the overall performance of the system and reduces the chances of downtime due to server overload.
+
+The cluster setup for the web server, application server, and database allows us to have redundancy and high availability. In case one of the servers in the cluster fails, the other server can take over its load, thus ensuring minimal downtime.
+
+In summary, having separate servers for the web server, application server, and database, along with a load balancer, allows for better scalability, high availability, and improved performance.
+
+
