@@ -1,0 +1,40 @@
+               +-------------------+
+               |                   |
+User Request  -->    www.foobar.com +------> Nginx Web Server (8.8.8.8)
+               |                   |
+               +-------------------+
+                      |     |
+                      |     | HTTP/HTTPS
+                      |     |
+               +------v-----v-----+
+               |                   |
+               |  Application      |
+               |   Server          |
+               |                   |
+               +------|-----|-----+
+                      |     |
+                      |     | Connects to MySQL database server
+                      |     |
+               +------v-----v-----+
+               |                   |
+               |  MySQL            |
+               |  Database Server  |
+               |                   |
+               +-------------------+
+Here are some specifics about this infrastructure:
+
+A server is a computer program that provides a specific kind of service to another computer program or client. In this case, we are using a physical or virtual machine as a server to host our website.
+The role of a domain name is to provide a human-readable name that is easy to remember and use in place of an IP address. Users can simply type www.foobar.com into their web browser, and the DNS (Domain Name System) will resolve this domain name to the IP address of our server (8.8.8.8).
+The www record in www.foobar.com is a subdomain that is used to distinguish a specific service or resource hosted on our domain. In this case, it is used to indicate that our website is hosted on this subdomain.
+The role of the web server (Nginx) is to receive incoming HTTP/HTTPS requests from clients (e.g., web browsers) and route them to the appropriate application server. It also serves static files (e.g., images, CSS, JavaScript) directly to clients to reduce the load on the application server.
+The role of the application server is to run our code base (e.g., PHP, Python, Ruby) and generate dynamic content based on the incoming requests. It communicates with the web server using a specific protocol (e.g., FastCGI) to receive requests and send responses.
+The role of the database (MySQL) is to store and manage the data used by our application. It provides a structured and efficient way to store, retrieve, and manipulate data. The application server communicates with the database using SQL (Structured Query Language) commands.
+The server uses the HTTP/HTTPS protocol to communicate with the computer of the user requesting the website. When a user types www.foobar.com into their web browser, the browser sends an HTTP/HTTPS request to the IP address of our server (8.8.8.8), and the server responds with the appropriate content.
+However, there are some issues with this infrastructure:
+
+It is a SPOF (Single Point of Failure) because all components are hosted on a single server. If this server fails, the website will be unavailable until the issue is resolved.
+There will be downtime when maintenance is needed (e.g., deploying new code, updating software) because the web server needs to be restarted. During this time, the website will be unavailable.
+It cannot scale if there is too much incoming traffic because all components are hosted on a single server. To handle more traffic, we would need to add more servers and use a load balancer to distribute the incoming requests among them.
+
+
+
