@@ -1,0 +1,24 @@
+1 Load Balancer (HAproxy)
+2 Web Servers (Nginx)
+2 Application Servers
+1 Primary-Replica Cluster Database (MySQL)
+3 Firewalls
+1 SSL Certificate to serve www.foobar.com over HTTPS
+3 Monitoring Clients (data collector for Sumologic or other monitoring services)
+Additional elements and their purposes:
+
+Firewalls are added to protect the servers from unauthorized access and to prevent malicious traffic from reaching the servers.
+SSL certificate is added to serve the website over HTTPS, ensuring that the communication between the user and the server is encrypted and secure.
+Monitoring is added to detect and diagnose any issues that arise in the infrastructure, to ensure optimal performance and availability.
+Details about the additional elements:
+
+Firewalls are used to control access to the servers and filter traffic coming into the infrastructure. They are responsible for enforcing security policies, blocking unauthorized traffic, and protecting the servers from various types of attacks.
+Serving traffic over HTTPS is important for security reasons, as it ensures that the communication between the user's browser and the server is encrypted and secure, preventing malicious third parties from intercepting or modifying the data.
+Monitoring is used to keep an eye on the health and performance of the infrastructure, and to alert the administrator if any issues arise. The monitoring tool is collecting data by installing agents on each server, and sending data to a centralized data store where it can be analyzed and visualized.
+To monitor the web server QPS, one can set up a monitoring agent on the web server that collects data on the number of requests served per second, and sends this data to the centralized data store. The monitoring tool can then alert the administrator if the QPS exceeds a certain threshold.
+
+Issues with the infrastructure:
+
+Terminating SSL at the load balancer level is an issue because it means that the data between the load balancer and the web server is not encrypted, leaving it vulnerable to interception and modification. It is recommended to use end-to-end encryption by installing SSL certificates on both the load balancer and the web server.
+Having only one MySQL server capable of accepting writes is an issue because it creates a single point of failure, and if the primary server goes down, the application will be unable to write to the database. It is recommended to set up a Primary-Replica cluster to provide redundancy and high availability.
+Having servers with all the same components (database, web server and application server) might be a problem because it creates a homogeneous infrastructure, and if there is a software bug or security issue that affects one component, it could potentially affect all servers. It is recommended to have a mix of server configurations, and to keep the software up-to-date to mitigate these risks.
