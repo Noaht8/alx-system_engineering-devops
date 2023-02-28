@@ -1,0 +1,44 @@
+               +-------------------+          +-------------------+
+               |                   |          |                   |
+User Request  -->    www.foobar.com +------> |  Load Balancer     |
+               |                   |          |   (HAProxy)        |
+               +-------------------+          +-------------------+
+                      |     |                         |     |
+                      |     |  Distributed requests     |     |
+                      |     |                         |     |
+               +------v-----v-----+          +------v-----v-----+
+               |                   |          |                   |
+               |  Application      |          |  Application      |
+               |   Server 1        |          |   Server 2        |
+               |                   |          |                   |
+               +-------------------+          +-------------------+
+                      |     |                         |     |
+                      |     |  Replicate data          |     |
+                      |     |                         |     |
+               +------v-----v-----+          +------v-----v-----+
+               |                   |          |                   |
+               |  MySQL            |          |  MySQL            |
+               |  Primary Node     |          |  Replica Node     |
+               |                   |          |                   |
+               +-------------------+          +-------------------+
+
+
+
+Here are some specifics about this infrastructure:
+
+We added two additional servers to create a more fault-tolerant setup. Each server will host either an application server or a database node.
+We added a load balancer (HAproxy) to distribute incoming requests among the two application servers. This will help to balance the load and prevent one server from becoming overwhelmed.
+We added a set of application files (code base) that will be used by the application servers to generate dynamic content.
+We added a MySQL database that will store and manage the data used by the application. The database will use a Primary-Replica (Master-Slave) cluster setup to provide fault-tolerance and redundancy.
+The load balancer is configured with a Round Robin distribution algorithm, which means that it will distribute requests in a circular order among the available servers. For example, the first request will go to Server 1, the second request will go to Server 2, the third request will go to Server 1 again, and so on.
+
+The load balancer is enabling an Active-Active setup, which means that both application servers are actively serving requests at the same time. In an Active-Passive setup, only one server is actively serving requests, while the other server is on standby and only becomes active if the primary server fails.
+
+The Primary-Replica (Master-Slave) cluster setup works by replicating data from the Primary Node (master) to the Replica Node (slave) in real-time. Any changes made to the Primary Node are immediately copied to the Replica Node. This provides redundancy and fault-tolerance because if the Primary Node fails, the Replica Node can take over and continue serving requests without any data loss.
+
+The Primary node is the main database server that receives read and write requests from the application servers. The Replica node is a read-only copy of the Primary node that is used for redundancy and fault-tolerance. The application servers can read data from the Replica node to reduce the load on the Primary node, but they cannot write data to the Replica node.
+
+However, there are some issues with this infrastructure:
+
+The load balancer is a SPOF because if it fails, incoming requests will not be distributed properly. We can add another load balancer in a High-Availability setup to address this issue.
+There are security issues because there is no firewall or HTTPS.
