@@ -1,4 +1,4 @@
-# Creates a file in temp
+# Creates a file in temp and changes owner and group
 file { '/tmp/school':
   mode    => '0744',
   owner   => 'www-data',
