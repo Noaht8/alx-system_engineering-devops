@@ -34,20 +34,22 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend load_balancer
-	bind	0.0.0.0:80
-	bind	0.0.0.0:443 ssl crt /etc/ssl/www.noahtsegay.tech/www.noahtsegay.tech.pem
-	mode	http
-	acl letsencrypt-acl path_beg /.well-known/acme-challenge/
-	use_backend letsencrypt-backend if letsencrypt-acl
 
-	default_backend	web_servers
+# start of parameters for aysuarex.tech
+frontend noahtsegay.tech-http-frontend
+	bind	 *:80
+	http-request set-header X-Forwarded-Proto http
+	default_backend	 noahtsegay.tech-backend
 
-backend letsencrypt-backend
-	server letsencrypt 127.0.0.1:8888
 
-backend web_servers
-	balance	roundrobin
-	mode	http
-	server	116388-web-01 54.161.254.41:80
-	server	116388-web-02 54.162.77.232:80
+frontend  noahtsegay.tech-https-frontend
+	bind *:443 ssl crt /etc/ssl/noahtsegay.tech.pem
+	http-request set-header X-Forwarded-Proto https
+        default_backend noahtsegay.tech-backend
+
+
+backend noahtsegay.tech-backend
+        balance roundrobin
+        server 116388-web-01 54.161.254.41:80 check
+        server 116388-web-02 54.162.77.232:80 check
+# end of parameters
