@@ -1,0 +1,25 @@
+DNS request
+Your browser sends a DNS request to a DNS server. A DNS server is a computer that translates domain names into IP addresses. The IP address is a unique number that identifies a computer on the internet.
+
+TCP/IP
+Once the DNS server has returned the IP address, your browser uses TCP/IP to connect to the web server. TCP/IP is a set of protocols that govern how data is exchanged between computers on the internet.
+
+Firewall
+The web server may be behind a firewall. A firewall is a security device that protects a computer or network from unauthorized access. The firewall may block your browser from connecting to the web server if it does not recognize the request.
+
+HTTPS/SSL
+If the web server is using HTTPS, your browser will initiate an SSL handshake. SSL is a security protocol that encrypts data exchanged between your browser and the web server. This helps to protect your privacy and security.
+
+Load-balancer
+The web server may be behind a load balancer. A load balancer is a device that distributes traffic across multiple web servers. This helps to improve performance and reliability.
+
+Web server
+The web server receives your request and sends back a response. The response may contain the HTML code for a web page, an image, or other data.
+
+Application server
+If the web page requires dynamic content, such as a login page or a shopping cart, the request will be forwarded to an application server. The application server will process the request and generate the appropriate response.
+
+Database
+If the web page requires data from a database, the application server will query the database and retrieve the data. The data will then be returned to the browser.
+
+Once the browser has received the response, it will render the web page on your screen.
