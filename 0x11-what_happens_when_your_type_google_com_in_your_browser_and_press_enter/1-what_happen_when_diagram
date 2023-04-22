@@ -1,0 +1,7 @@
+[Image of a user typing a domain name into a web browser]
+[Image of a DNS server]
+[Image of a web server]
+[Image of an application server]
+[Image of a database]
+
+These images show the different components involved in loading a web page. The user types a domain name into their web browser, which sends a DNS request to a DNS server. The DNS server translates the domain name into an IP address, which is then used by the web browser to connect to the web server. The web server then sends the web page back to the web browser, which renders the page on the user's screen.
