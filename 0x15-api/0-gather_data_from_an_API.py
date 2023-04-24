@@ -11,7 +11,7 @@ if __name__ == "__main__":
     def make_request(resource, param=None):
         """Retrieve user from API
         """
-        url = 'https://jsonplaceholder.typicode.com/todos/1'
+        url = 'https://jsonplaceholder.typicode.com/'
         url += resource
         if param:
             url += ('?' + param[0] + '=' + param[1])
