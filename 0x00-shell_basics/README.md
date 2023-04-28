@@ -5,4 +5,4 @@
 ## 19. File type: School
 Contents of the magic file
 
-0 string SCHOOL School data
+'0 string SCHOOL School data'
