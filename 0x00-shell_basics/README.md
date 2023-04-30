@@ -5,7 +5,7 @@
 ## Repo Contents
 ___
 
-This repository constains the following files:
+This repository contains the following files:
 
 |File| Description|
 |:-------|:-------|
