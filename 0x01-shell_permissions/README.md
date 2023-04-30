@@ -9,7 +9,8 @@ This repository contains the following files:
 
 |File| Description|
 |:---------|:---------|
-| **<table border="1px">** | **<table border="1px">** |
+| **<table border="1px">** |
+  | **<table border="1px">** |
 |[0-iam_betty](0-iam_betty)| Script that switches the current user to the user betty|
 |[1-who_am_i](1-who_am_i)| Script that prints the effective username of the current user|
 |[2-groups](2-groups)| Script that prints all the groups the current user is part of|
