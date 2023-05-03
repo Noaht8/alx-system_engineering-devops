@@ -3,7 +3,7 @@
 ![Image link](http://linuxcommand.org/images/file_permissions.png)
 
 ## Author:
-* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>
+* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>  &#128511;
 
 ## Contents
 ___
