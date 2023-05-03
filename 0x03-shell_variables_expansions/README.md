@@ -31,7 +31,7 @@ This repository contains the following files:
 |[100-decimal_to_hexadecimal](100-decimal_to_hexadecimal)| Script that converts a number from base 10 to base 16<br><li>The number in base 10 is stored in the environment variable DECIMAL|
 |[101-rot13](101-rot13)| Script that encodes and decodes text using the rot13 encryption. Assume ASCII|
 |[102-odd](102-odd)| Script that prints every other line from the input, starting with the first line|
-|[103-water_and_stir](103-water_and_stir)| Script that adds the two numbers stored in the environment variables WATER and STIR and prints the result<br><li>WATER is in base water<br>STIR is in base stir<br><li>The result should be in base bestchol|
+|[103-water_and_stir](103-water_and_stir)| Script that adds the two numbers stored in the environment variables WATER and STIR and prints the result<br><li>WATER is in base water<br><li>STIR is in base stir<br><li>The result should be in base bestchol|
 
 
 
