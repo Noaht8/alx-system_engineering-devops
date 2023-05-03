@@ -1,1 +1,13 @@
-0x03-shell_variables_expansions
+# 0x03-shell_variables_expansions
+
+![Image link](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*F20fM4cjs0LqvbaZ8BN2oA.jpeg)
+
+## Contents
+___
+
+This repository contains the following files:
+
+|File| Description|
+|:---------|:---------|
+|[0-alias](0-alias)| Script that creates an alias|
+
