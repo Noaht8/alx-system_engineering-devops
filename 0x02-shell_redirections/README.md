@@ -1,6 +1,6 @@
 # 0x02. Shell, I/O Redirections and filters
 
-![Image link](https://mcdn.wallpapersafari.com/medium/49/19/BXLhGy.png)
+![Image link]([https://mcdn.wallpapersafari.com/medium/49/19/BXLhGy.png](https://cdn.comparitech.com/wp-content/uploads/2018/08/Linux-Shell-Getting-Started-1-768x384.jpg))
 
 ## Author:
 * **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>  &#128511;
