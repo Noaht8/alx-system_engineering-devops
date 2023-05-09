@@ -17,29 +17,36 @@ def count_words(subreddit, word_list):
     A list of tuples, where each tuple contains the keyword and its count.
   """
 
-  # Make the API request
-  response = requests.get('https://api.reddit.com/r/{subreddit}/hot/.json'.format(subreddit=subreddit))
-  if response.status_code != 200:
-    print('Error: {}'.format(response.status_code))
+  # Check if the subreddit is valid.
+  if not subreddit:
+    print("Invalid subreddit.")
     return
 
-  # Parse the JSON response
+  # Get the hot articles for the subreddit.
+  response = requests.get("https://api.reddit.com/r/{}/hot.json?limit=100".format(subreddit))
+  if response.status_code != 200:
+    print("Error fetching hot articles for subreddit {}.".format(subreddit))
+    return
+
+  # Parse the response and get the titles of the articles.
   data = json.loads(response.content)
+  titles = [article["title"] for article in data["data"]["children"]]
 
-  # Get the titles of all hot articles
-  titles = [post['title'] for post in data['data']['children']]
-
-  # Count the occurrences of each keyword in the titles
+  # Count the number of times each keyword appears in the titles.
   counts = {}
-  for word in word_list:
-    word = word.lower()
-    counts[word] = titles.count(word)
+  for title in titles:
+    for word in word_list:
+      if word.lower() in title.lower():
+        if word not in counts:
+          counts[word] = 1
+        else:
+          counts[word] += 1
 
-  # Sort the counts by descending order
+  # Sort the counts by their value, in descending order.
   sorted_counts = sorted(counts.items(), key=lambda x: x[1], reverse=True)
 
-  # Print the sorted counts
+  # Print the sorted counts.
   for word, count in sorted_counts:
-    print('{0}: {1}'.format(word, count))
+    print("{}: {}".format(word, count))
 
   return sorted_counts
