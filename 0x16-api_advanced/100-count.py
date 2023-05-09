@@ -2,6 +2,10 @@
 """Query Reddit API to determine subreddit sub count
 """
 
+#!/usr/bin/python3
+"""Query Reddit API to determine subreddit sub count
+"""
+
 import requests
 
 
