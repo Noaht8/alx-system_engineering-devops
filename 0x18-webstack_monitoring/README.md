@@ -16,5 +16,6 @@ Create an ```application key```<br>
 Copy-paste in your Intranet user profile your DataDog ```API key``` and your DataDog ```application key```.<br>
 Your server ```web-01``` should be visible in Datadog under the host name ```XX-web-01```<br>
 You can validate it by using this API<br>
-<p>If needed, you will need to update the hostname of your server</p><br>
+If needed, you will need to update the hostname of your server
+
 ![Datadog host](Task_0.jpg)
