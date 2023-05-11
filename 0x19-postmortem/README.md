@@ -18,7 +18,8 @@ The root cause of the outage was a failure in our load balancer. The load balanc
 
 ![image link](https://preview.redd.it/n4rztgji10q31.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=b968fd6925499ac9d541120542bdc17aff6a0ab0)
 
-The issue was resolved by restarting the load balancer. Once the load balancer was restarted, it began distributing traffic across all of the servers again.
+![image link](https://img-9gag-fun.9cache.com/photo/aoNpZ9m_460s.jpg)
+## The issue was resolved by restarting the load balancer. Once the load balancer was restarted, it began distributing traffic across all of the servers again.
 
 ![image link](https://d13urrra316e2f.cloudfront.net/original/3X/9/c/9c01de88b0a5bf497d3468b5408a3388330fa55d.jpeg)
 ## Corrective and Preventative Measures
