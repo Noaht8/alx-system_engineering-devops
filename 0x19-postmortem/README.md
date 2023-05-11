@@ -20,6 +20,7 @@ The root cause of the outage was a failure in our load balancer. The load balanc
 
 The issue was resolved by restarting the load balancer. Once the load balancer was restarted, it began distributing traffic across all of the servers again.
 
+![image link](https://d13urrra316e2f.cloudfront.net/original/3X/9/c/9c01de88b0a5bf497d3468b5408a3388330fa55d.jpeg)
 ## Corrective and Preventative Measures
 
 To prevent future outages, we have taken the following corrective and preventative measures:
@@ -27,3 +28,5 @@ To prevent future outages, we have taken the following corrective and preventati
 We have implemented a new load balancer that is more reliable.
 We have increased the capacity of our servers.
 We have implemented a new monitoring system that will alert us to potential issues sooner.
+
+![image link](https://d13urrra316e2f.cloudfront.net/original/3X/3/2/3247c040af8c9323e232905ba3cf477d9bcc69ec.jpeg)
