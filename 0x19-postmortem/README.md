@@ -6,10 +6,10 @@ On February 8, 2023, at 10:00 AM EAT, our website experienced an outage that las
 
 ## Timeline
 
-10:00 AM EAT: Our monitoring system detected that our website was unavailable.
-10:05 AM EAT: Our engineers began investigating the issue.
-10:15 AM EAT: Our engineers determined that the issue was caused by a failure in our load balancer.
-10:30 AM EAT: Our engineers began working to restore our website.
+10:00 AM EAT: Our monitoring system detected that our website was unavailable.<br>
+10:05 AM EAT: Our engineers began investigating the issue.<br>
+10:15 AM EAT: Our engineers determined that the issue was caused by a failure in our load balancer.<br>
+10:30 AM EAT: Our engineers began working to restore our website.<br>
 12:00 PM EAT: Our website was restored.
 
 ## Root Cause and Resolution
