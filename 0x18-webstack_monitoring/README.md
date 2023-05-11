@@ -17,4 +17,4 @@ Copy-paste in your Intranet user profile your DataDog ```API key``` and your Dat
 Your server ```web-01``` should be visible in Datadog under the host name ```XX-web-01```<br>
     You can validate it by using this API<br>
     If needed, you will need to update the hostname of your server<br>
-[Datadog host](Task_0.jpg)
+![Datadog host](Task_0.jpg)
