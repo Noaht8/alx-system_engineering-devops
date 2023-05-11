@@ -16,7 +16,7 @@ On February 8, 2023, at 10:00 AM EAT, our website experienced an outage that las
 
 The root cause of the outage was a failure in our load balancer. The load balancer is a device that distributes traffic across multiple servers. When the load balancer failed, it caused all of the traffic to be routed to a single server. This caused the server to become overloaded and unavailable.
 
-![image link](https://blog.pearltrees.com/wp-content/2009/03/interruption1.png)
+![image link](https://preview.redd.it/n4rztgji10q31.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=b968fd6925499ac9d541120542bdc17aff6a0ab0)
 
 The issue was resolved by restarting the load balancer. Once the load balancer was restarted, it began distributing traffic across all of the servers again.
 
