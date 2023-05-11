@@ -33,3 +33,4 @@ Your server ```web-01``` should be visible in Datadog under the host name ```XX-
 ### Dashboard with different metrics displayed in order to get a few different visualizations.
 ![Noah's Dashboard](Task_2.png)
 
+[2-setup_datadog](2-setup_datadog): Contains the ```dashboard_id```
