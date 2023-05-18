@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 # This script gracefully restarts gunicorn app
-# Get the PID of the Gunicorn process
-PID=$(pgrep gunicorn | head -n 1)
-# Send a HUP signal to the process to gracefully reload the workers
-kill -HUP "$PID"
+# Get the Gunicorn master process ID
+MASTER_PID=$(ps aux | grep gunicorn | grep -v grep | awk '{if($13=="master") print $2}')
+
+# Gracefully reload Gunicorn
+if [ ! -z "$MASTER_PID" ]; then
+    echo "Reloading Gunicorn (master PID: $MASTER_PID)..."
+    kill -HUP $MASTER_PID
+    echo "Gunicorn reloaded successfully."
+else
+    echo "Gunicorn master process not found."
+fi
+
