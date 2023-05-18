@@ -1,14 +1,22 @@
-#!/usr/bin/env bash
-# This script gracefully restarts gunicorn app
+#!/bin/bash
+
 # Get the Gunicorn master process ID
 MASTER_PID=$(ps aux | grep gunicorn | grep -v grep | awk '{if($13=="master") print $2}')
 
-# Gracefully reload Gunicorn
+# Get the worker PIDs
+WORKER_PIDS=$(ps aux | grep gunicorn | grep -v grep | awk '{if($13!="master") print $2}')
+
+# Gracefully reload Gunicorn workers one by one
 if [ ! -z "$MASTER_PID" ]; then
-    echo "Reloading Gunicorn (master PID: $MASTER_PID)..."
-    kill -HUP $MASTER_PID
-    echo "Gunicorn reloaded successfully."
+    echo "Reloading Gunicorn workers (master PID: $MASTER_PID)..."
+
+    for WORKER_PID in $WORKER_PIDS; do
+        echo "Reloading worker (PID: $WORKER_PID)..."
+        kill -HUP $WORKER_PID
+        sleep 1
+    done
+
+    echo "Gunicorn workers reloaded successfully."
 else
     echo "Gunicorn master process not found."
 fi
-
