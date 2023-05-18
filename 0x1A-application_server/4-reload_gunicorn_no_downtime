@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
 # This script restarts gunicorn app
-PID=$(pgrep gunicorn | head -n 1)
-kill -HUP "$PID"
+# Get the Gunicorn process ID
+gunicorn_pid=$(pgrep -f "gunicorn")
+
+# Check if Gunicorn is running
+if [ -z "$gunicorn_pid" ]; then
+    echo "Gunicorn is not running."
+    exit 1
+fi
+
+# Send the HUP signal to Gunicorn to gracefully reload
+echo "Reloading Gunicorn (PID: $gunicorn_pid)..."
+kill -HUP $gunicorn_pid
+
+echo "Gunicorn has been reloaded."
+
