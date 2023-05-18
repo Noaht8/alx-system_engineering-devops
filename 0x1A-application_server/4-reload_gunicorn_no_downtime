@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # This script restarts gunicorn app
-PID=$(pgrep gunicorn | head -n 1)
-kill -HUP "$PID"
+# Get the PID of the Gunicorn master process
+MASTER_PID=$(ps auxf | grep '[gunicorn' | awk '{print $2}')
+
+# Send a HUP signal to the master process to gracefully reload the workers
+kill -HUP $MASTER_PID
