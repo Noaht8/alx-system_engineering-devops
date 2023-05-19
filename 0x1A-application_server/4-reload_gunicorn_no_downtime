@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 # This script gracefully restarts gunicorn app
-# Get the PID of the Gunicorn process
-PID=$(pgrep gunicorn | head -n 1)
-# Send a HUP signal to the process to gracefully reload the workers
-kill -HUP "$PID"
+systemctl status gunicorn | grep -oE 'Main PID: [0-9]+' | cut -d ' ' -f3 | xargs kill -HUP
