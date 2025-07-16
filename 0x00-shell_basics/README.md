@@ -8,12 +8,22 @@
 ## Repo Contents
 ___
 ## [0-current_working_directory](0-current_working_directory)
-This repository contains the following files:
-Write a script that prints the absolute path name of the current working directory.
+This repository contains the following files:<br>
+Write a script that prints the absolute path name of the current working directory.<br>
 Example:
 ```
 $ ./0-current_working_directory
 /root/alx-system_engineering-devops/0x00-shell_basics
+$
+```
+## [1-listit](1-listit)
+
+Display the contents list of your current directory.<br>
+Example:
+```
+$ ./1-listit
+Applications    Documents   Dropbox Movies Pictures
+Desktop Downloads   Library Music Public
 $
 ```
 
