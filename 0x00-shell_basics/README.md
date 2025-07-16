@@ -3,7 +3,7 @@
 ![Image link](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/205/image.jpg)
 
 ## Author:
-* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>  &#128511;
+* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)> 😎;
 
 ## Repo Contents
 ___
