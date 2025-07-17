@@ -39,8 +39,51 @@ julien@ubuntu:~$ pwd
 julien@ubuntu:~$
 ```
 ## [3-listfiles](3-listfiles)
+Display current directory contents in a long format<br>
+Example:<br>
+```
+$ ./3-listfiles
+total 32
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+$
+```
 ## [4-listmorefiles](4-listmorefiles)
+Display current directory contents, including hidden files (starting with .). Use the long format.<br>
+Example:<br>
+```
+$ ./4-listmorefiles
+total 32
+drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
+drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
+$
+```
 ## [5-listfilesdigitonly](5-listfilesdigitonly)
+Display current directory contents.<br>
+- Long format<br>
+- with user and group IDs displayed numerically<br>
+- And hidden files (starting with .)<br>
+Example:<br>
+```
+$ ./5-listfilesdigitonly
+total 32
+drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
+drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:23 1-listfiles
+-rwxr-xr-x@ 1 501 20 19 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 501 20 20 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:41 4-listmorefiles
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
+$
+```
 ## [6-firstdirectory](6-firstdirectory)
 ## [7-movethatfile](7-movethatfile)
 ## [8-firstdelete](8-firstdelete)
