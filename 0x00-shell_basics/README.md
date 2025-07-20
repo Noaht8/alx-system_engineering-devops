@@ -1,4 +1,3 @@
-$${\color{red}Red}$$
 # 0x00. Shell, basics
 
 ![Image link](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/205/image.jpg)
@@ -86,7 +85,7 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 $
 ```
 ## [6-firstdirectory](6-firstdirectory)
-Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.<br>
+Create a script that creates a directory named `my_first_directory` in the $${\color{red}/tmp/}$$directory.<br>
 Example:<br>
 ```
 $ ./6-firstdirectory
