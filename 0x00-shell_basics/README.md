@@ -85,7 +85,7 @@ drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
 $
 ```
 ## [6-firstdirectory](6-firstdirectory)
-Create a script that creates a directory named <code style="color: red;">my_first_directory</code> in the <span style="color: red;">/tmp/</span>  directory.<br>
+Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.<br>
 Example:<br>
 ```
 $ ./6-firstdirectory
