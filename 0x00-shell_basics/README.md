@@ -1,6 +1,6 @@
 # 0x00. Shell, basics
 
-![Image link](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/205/image.jpg)
+![Image link](image.jpg)
 
 ## Author:
 * **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)> 😎;
