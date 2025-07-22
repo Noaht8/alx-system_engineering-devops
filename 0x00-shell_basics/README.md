@@ -94,6 +94,14 @@ $ file /tmp/my_first_directory/
 $
 ```
 ## [7-movethatfile](7-movethatfile)
+Move the file betty from `/tmp/` to `/tmp/my_first_directory`.<br>
+Example:<br>
+```
+$ ./7-movethatfile
+$ ls /tmp/my_first_directory/
+betty
+$
+```
 ## [8-firstdelete](8-firstdelete)
 ## [9-firstdirdeletion](9-firstdirdeletion)
 ## [10-back](10-back)
