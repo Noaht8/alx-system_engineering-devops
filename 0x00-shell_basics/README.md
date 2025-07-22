@@ -1,7 +1,6 @@
 # 0x00. Shell, basics
 
-## Author:
-* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)> 😎;
+## Author: **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)> 😎;
 
 ![Image link](image.jpg)
 
