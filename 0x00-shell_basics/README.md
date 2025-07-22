@@ -194,29 +194,81 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 -rw-rw-r-- 1 ubuntu ubuntu    0 Sep 20 03:32 Elif_ym
 ```
 ## [101-clean_emacs](101-clean_emacs)
+Create a script that deletes all files in the current working directory that end with the character `~`.
+```
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls
+main.c  main.c~  Makefile~
+ubuntu@ip-172-31-63-244:/tmp/sym$ ./101-clean_emacs
+ubuntu@ip-172-31-63-244:/tmp/emacs$ ls
+main.c
+ubuntu@ip-172-31-63-244:/tmp/emacs$
+```
 ## [102-tree](102-tree)
+Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
+
+You are only allowed to use two spaces (and lines) in your script, not more.
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 4
+-rwxrw-r-- 1 julien julien 44 Sep 20 12:09 102-tree
+julien@ubuntu:/tmp/h$ wc -l 102-tree 
+2 102-tree
+julien@ubuntu:/tmp/h$ head -1 102-tree 
+#!/bin/bash
+julien@ubuntu:/tmp/h$ tr -cd ' ' < 102-tree | wc -c # you do not have to understand this yet, but the result should be 2, 1 or 0
+2
+julien@ubuntu:/tmp/h$ ./102-tree 
+julien@ubuntu:/tmp/h$ ls
+102-tree  welcome
+julien@ubuntu:/tmp/h$ ls welcome/
+to
+julien@ubuntu:/tmp/h$ ls -l welcome/to
+total 4
+drwxrwxr-x 2 julien julien 4096 Sep 20 12:11 school
+julien@ubuntu:/tmp/h$
+```
 ## [103-commas](103-commas)
+Write a command that lists all the files and directories of the current directory, separated by commas (,).
+
+- Directory names should end with a slash (/)
+- Files and directories starting with a dot (.) should be listed
+- The listing should be alpha ordered, except for the directories . and .. which should be listed at the very beginning
+- Only digits and letters are used to sort; Digits should come first
+- You can assume that all the files we will test with will have at least one letter or one digit
+- The listing should end with a new line
+```
+ubuntu@ubuntu:~/$ ls -a
+
+.  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
+
+ubuntu@ubuntu:~/$ ./103-commas
+
+./, ../, 0-commas, 0-commas-checks/, 1-empty_casks, 2-gifs, 3-directories, 4-zeros, 5-rot13, 6-odd, 7-sort_rot13, Makefile, quote, .test, test_dir/, test.var
+
+ubuntu@ubuntu:~/$
+```
 ## [school.mgc](school.mgc)
-|File| Description|
-|:-------|:-------|
-|[0-current_working_directory](0-current_working_directory)| script that prints the absolute path name of the current working directory|
-|[1-listit](1-listit)| Display the contents list of your current directory|
-|[2-bring_me_home](2-bring_me_home)| Script that changes the working directory to the user’s home directory|
-|[3-listfiles](3-listfiles)| Display current directory contents in a long format|
-|[4-listmorefiles](4-listmorefiles)| Display current directory contents, including hidden files (starting with .). Use the long format|
-|[5-listfilesdigitonly](5-listfilesdigitonly)| Display current directory contents<br><li>Long format<br><li>with user and group IDs displayed numerically<br><li>And hidden files (starting with .)|
-|[6-firstdirectory](6-firstdirectory)| Script that creates a directory named my_first_directory in the /tmp/ directory|
-|[7-movethatfile](7-movethatfile)| Move the file betty from /tmp/ to /tmp/my_first_directory|
-|[8-firstdelete](8-firstdelete)| Delete the file betty<br><li>The file betty is in /tmp/my_first_directory|
-|[9-firstdirdeletion](9-firstdirdeletion)| Delete the directory my_first_directory that is in the /tmp directory|
-|[10-back](10-back)| Write a script that changes the working directory to the previous one|
-|[11-lists](11-lists)| Script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.|
-|[12-file_type](12-file_type)| Script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script|
-|[13-symbolic_link](13-symbolic_link)| Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory|
-|[14-copy_html](14-copy_html)| Script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.|
-|[100-lets_move](100-lets_move)| Script that moves all files beginning with an uppercase letter to the directory /tmp/u|
-|[101-clean_emacs](101-clean_emacs)| Script that deletes all files in the current working directory that end with the character ~|
-|[102-tree](102-tree)| Script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory|
-|[103-commas](103-commas)| Command that lists all the files and directories of the current directory, separated by commas (,)<br><li>Directory names should end with a slash (/)<br><li>Files and directories starting with a dot (.) should be listed<br><li>The listing should be alpha ordered, except for the directories . and .. which should be listed at the very beginning<br><li>Only digits and letters are used to sort; Digits should come first<br><li>You can assume that all the files we will test with will have at least one letter or one digit<br><li>The listing should end with a new line|
-|[school.mgc](school.mgc)| A magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0<br><li>Contents of the magic file: `0 string SCHOOL School data`|
+Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
+```
+ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
+ubuntu@ip-172-31-63-244:/tmp/magic$ ls -la
+total 268
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 02:44 .
+drwxrwxrwt 11 root   root   139264 Sep 20 02:44 ..
+-rw-r--r--  1 ubuntu ubuntu    496 Sep 20 02:42 school.mgc
+-rwxr-xr-x  1 ubuntu ubuntu 110080 Sep 20 02:43 ls
+-rw-rw-r--  1 ubuntu ubuntu     50 Sep 20 02:06 thisisaschoolfile
+-rw-rw-r--  1 ubuntu ubuntu     30 Sep 20 02:16 thisisatextfile
+ubuntu@ip-172-31-63-244:/tmp/magic$ file --mime-type -m school.mgc *
+school.mgc:         application/octet-stream
+ls:                    application/octet-stream
+thisisaschoolfile: School
+thisisatextfile:       text/plain
+ubuntu@ip-172-31-63-244:/tmp/magic$ file -m school.mgc *
+school.mgc:         data
+ls:                    data
+thisisaschoolfile: School data
+thisisatextfile:       ASCII text
+ubuntu@ip-172-31-63-244:/tmp/magic$
+```
 
