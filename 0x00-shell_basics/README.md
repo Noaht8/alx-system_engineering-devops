@@ -105,6 +105,7 @@ $
 ## [8-firstdelete](8-firstdelete)
 Delete the file `betty`.<br>
 - The file `betty` is in `/tmp/my_first_directory`<br>
+
 Example:<br>
 ```
 $ ./8-firstdelete
@@ -121,8 +122,28 @@ $ file /tmp/my_first_directory
 $
 ```
 ## [10-back](10-back)
+Write a script that changes the working directory to the previous one.<br>
+```
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
+/var
+julien@ubuntu:/var$ source ./10-back
+/tmp
+julien@ubuntu:/tmp$ pwd
+/tmp
+```
 ## [11-lists](11-lists)
+Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
 ## [12-file_type](12-file_type)
+Write a script that prints the type of the file named `iamafile`. The file `iamafile` will be in the `/tmp` directory when we will run your script.<br>
+Example<br>
+```
+ubuntu@ip-172-31-63-244:~$ ./12-file_type
+/tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
+```
+Note that depending on the file, the output of your script will be different.
 ## [13-symbolic_link](13-symbolic_link)
 ## [14-copy_html](14-copy_html)
 ## [100-lets_move](100-lets_move)
