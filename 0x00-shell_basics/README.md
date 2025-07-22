@@ -103,7 +103,23 @@ betty
 $
 ```
 ## [8-firstdelete](8-firstdelete)
+Delete the file `betty`.<br>
+- The file `betty` is in `/tmp/my_first_directory`<br>
+Example:<br>
+```
+$ ./8-firstdelete
+$ ls /tmp/my_first_directory/
+$
+```
 ## [9-firstdirdeletion](9-firstdirdeletion)
+Delete the directory `my_first_directory` that is in the `/tmp` directory.<br>
+Example:<br>
+```
+$ ./9-firstdirdeletion
+$ file /tmp/my_first_directory
+/tmp/my_first_directory: cannot open `/tmp/my_first_directory' (No such file or directory)
+$
+```
 ## [10-back](10-back)
 ## [11-lists](11-lists)
 ## [12-file_type](12-file_type)
