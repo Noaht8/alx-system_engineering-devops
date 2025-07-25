@@ -21,6 +21,12 @@ julien@ubuntu:/tmp/h$ tail -1 0-iam_betty | wc -c
 julien@ubuntu:/tmp/h$
 ```
 ## [1-who_am_i](1-who_am_i)
+Write a script that prints the effective username of the current user.
+```
+julien@ubuntu:/tmp/h$ ./1-who_am_i
+julien
+julien@ubuntu:/tmp/h$
+```
 ## [2-groups](2-groups)
 ## [3-new_owner](3-new_owner)
 ## [4-empty](4-empty)
