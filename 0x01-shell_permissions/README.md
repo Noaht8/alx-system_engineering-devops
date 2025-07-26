@@ -52,11 +52,102 @@ julien@ubuntu:/tmp/h$
 ## [4-empty](4-empty)
 Write a script that creates an empty file called `hello`.
 ## [5-execute](5-execute)
+Write a script that adds execute permission to the owner of the file `hello`.
+
+* The file `hello` will be in the working directory
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:26 5-execute
+-rw-rw-r-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./hello
+bash: ./hello: Permission denied
+julien@ubuntu:/tmp/h$ ./5-execute 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:26 5-execute
+-rwxrw-r-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
 ## [6-multiple_permissions](6-multiple_permissions)
+Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file `hello`.
+
+* The file `hello` will be in the working directory
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 36 Sep 20 14:31 6-multiple_permissions
+-r--r----- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./6-multiple_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 36 Sep 20 14:31 6-multiple_permissions
+-r-xr-xr-- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
 ## [7-everybody](7-everybody)
+Write a script that adds execution permission to the owner, the group owner and the other users, to the file `hello`
+
+* The file `hello` will be in the working directory
+* You are not allowed to use commas for this script
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:35 7-everybody
+-rw-r----- 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./7-everybody 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:35 7-everybody
+-rwxr-x--x 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
 ## [8-James_Bond](8-James_Bond)
+Write a script that sets the permission to the file `hello` as follows:
+
+* Owner: no permission at all
+* Group: no permission at all
+* Other users: all the permissions
+The file `hello` will be in the working directory You are not allowed to use commas for this script
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:40 8-James_Bond
+-rwxr-x--x 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./8-James_Bond 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 28 Sep 20 14:40 8-James_Bond
+-------rwx 1 julien julien 23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
 ## [9-John_Doe](9-John_Doe)
+Write a script that sets the mode of the file `hello` to this:
+```
+-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
+```
+* The file `hello` will be in the working directory
+* You are not allowed to use commas for this script
 ## [10-mirror_permissions](10-mirror_permissions)
+Write a script that sets the mode of the file `hello` the same as `olleh`’s mode.
+
+* The file `hello` will be in the working directory
+* The file `olleh` will be in the working directory
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 42 Sep 20 14:45 10-mirror_permissions
+-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  0 Sep 20 14:43 olleh
+julien@ubuntu:/tmp/h$ ./10-mirror_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 8
+-rwxrw-r-- 1 julien julien 42 Sep 20 14:45 10-mirror_permissions
+-rw-rw-r-- 1 julien julien 23 Sep 20 14:25 hello
+-rw-rw-r-- 1 julien julien  0 Sep 20 14:43 olleh
+julien@ubuntu:/tmp/h$
+```
+Note: the mode of `olleh` will not always be 664. Make sure your script works for any mode.
 ## [11-directories_permissions](11-directories_permissions)
 ## [12-directory_permissions](12-directory_permissions)
 ## [13-change_group](13-change_group)
