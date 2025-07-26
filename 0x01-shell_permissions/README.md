@@ -149,30 +149,128 @@ julien@ubuntu:/tmp/h$
 ```
 Note: the mode of `olleh` will not always be 664. Make sure your script works for any mode.
 ## [11-directories_permissions](11-directories_permissions)
-## [12-directory_permissions](12-directory_permissions)
-## [13-change_group](13-change_group)
-## [100-change_owner_and_group](100-change_owner_and_group)
-## [101-symbolic_link_permissions](101-symbolic_link_permissions)
-## [102-if_only](102-if_only)
-## [103-Star_Wars](103-Star_Wars)
+Create a script that adds execute permission to all subdirectories of the `current directory` for the owner, the group owner and all other users.
 
-|File| Description|
-|:---------|:---------|
-|[0-iam_betty](0-iam_betty)| Script that switches the current user to the user betty|
-|[1-who_am_i](1-who_am_i)| Script that prints the effective username of the current user|
-|[2-groups](2-groups)| Script that prints all the groups the current user is part of|
-|[3-new_owner](3-new_owner)| Script that changes the owner of the file hello to the user betty|
-|[4-empty](4-empty)| Script that creates an empty file called hello|
-|[5-execute](5-execute)| Script that adds execute permission to the owner of the file hello|
-|[6-multiple_permissions](6-multiple_permissions)| Script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello|
-|[7-everybody](7-everybody)| Script that adds execution permission to the owner, the group owner and the other users, to the file hello|
-|[8-James_Bond](8-James_Bond)| Script that sets the permission to the file hello as follows:<br>Owner: no permission at all <br>Group: no permission at all <br>Other users: all the permissions|
-|[9-John_Doe](9-John_Doe)| Script that sets the mode of the file hello to this:<br>-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello|
-|[10-mirror_permissions](10-mirror_permissions)| Script that sets the mode of the file hello the same as olleh’s mode|
-|[11-directories_permissions](11-directories_permissions)| Script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users|
-|[12-directory_permissions](12-directory_permissions)| Script that creates a directory called my_dir with permissions 751 in the working directory|
-|[13-change_group](13-change_group)| Script that changes the group owner to school for the file hello|
-|[100-change_owner_and_group](100-change_owner_and_group)| Script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory|
-|[101-symbolic_link_permissions](101-symbolic_link_permissions)| Script that changes the owner and the group owner of _hello to vincent and staff respectively|
-|[102-if_only](102-if_only)| Script that changes the owner of the file hello to betty only if it is owned by the user guillaume|
-|[103-Star_Wars](103-Star_Wars)| Script script that will play the StarWars IV episode in the terminal|
+Regular files should not be changed.
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 20
+-rwxrwxr-x 1 julien julien   24 Sep 20 14:53 11-directories_permissions
+drwx------ 2 julien julien 4096 Sep 20 14:49 dir0
+drwx------ 2 julien julien 4096 Sep 20 14:49 dir1
+drwx------ 2 julien julien 4096 Sep 20 14:49 dir2
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./11-directories_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 20
+-rwxrwxr-x 1 julien julien   24 Sep 20 14:53 11-directories_permissions
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
+## [12-directory_permissions](12-directory_permissions)
+Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 20
+-rwxrwxr-x 1 julien julien   39 Sep 20 14:59 12-directory_permissions
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ ./12-directory_permission s
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   39 Sep 20 14:59 12-directory_permissions
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
+## [13-change_group](13-change_group)
+Write a script that changes the group owner to `school` for the file `hello`
+
+The file `hello` will be in the working directory
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   34 Sep 20 15:03 13-change_group
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./13-change_group 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      34 Sep 20 15:03 13-change_group
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien    4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien    4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien school   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
+## [100-change_owner_and_group](100-change_owner_and_group)
+Write a script that changes the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory.
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   36 Sep 20 15:06 100-change_owner_and_group
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir0
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir1
+drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./100-change_owner_and_group 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 vincent staff   36 Sep 20 15:06 100-change_owner_and_group
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir0
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir1
+drwx--x--x 2 vincent staff 4096 Sep 20 14:49 dir2
+drwxr-x--x 2 vincent staff 4096 Sep 20 14:59 my_dir
+-rw-rw-r-- 1 vincent staff   23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
+## [101-symbolic_link_permissions](101-symbolic_link_permissions)
+Write a script that changes the owner and the group owner of `_hello` to `vincent` and `staff` respectively.
+
+* The file `_hello` is in the working directory
+* The file `_hello` is a symbolic link
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien   44 Sep 20 15:12 101-symbolic_link_permissions
+-rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
+lrwxrwxrwx 1 julien julien    5 Sep 20 15:10 _hello -> hello
+julien@ubuntu:/tmp/h$ sudo ./101-symbolic_link_permissions 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      44 Sep 20 15:12 101-symbolic_link_permissions
+-rw-rw-r-- 1 julien julien      23 Sep 20 14:25 hello
+lrwxrwxrwx 1 vincent  staff    5 Sep 20 15:10 _hello -> hello
+julien@ubuntu:/tmp/h$
+```
+## [102-if_only](102-if_only)
+Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
+
+* The file `hello` will be in the working directory
+```
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien    julien      47 Sep 20 15:18 102-if_only 
+-rw-rw-r-- 1 guillaume julien      23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$ sudo ./102-if_only 
+julien@ubuntu:/tmp/h$ ls -l
+total 24
+-rwxrwxr-x 1 julien julien      47 Sep 20 15:18 102-if_only 
+-rw-rw-r-- 1 betty  julien      23 Sep 20 14:25 hello
+julien@ubuntu:/tmp/h$
+```
+## [103-Star_Wars](103-Star_Wars)
+Write a script that will play the StarWars IV episode in the terminal.
