@@ -22,20 +22,20 @@ Resources
 
 **man or help**:
 
--   `cd`  Change directory.
+-   `cd` /t Change directory.
 -   `ls`  List files and folders in the current directory.
 -   `pwd`  Print Working Directory—shows your current path.
 -   `less`  View a file one page at a time (with scrolling).
 -   `file`  Identify the type of a file by examining its contents.
 -   `ln`  Create links (Hard link (default) or Symbolic (soft) link)
--   `cp`
--   `mv`
--   `rm`
--   `mkdir`
--   `type`
--   `which`
--   `help`
--   `man`
+-   `cp`  Copy files or directories.
+-   `mv`  Move or rename files or directories.
+-   `rm`  Remove (delete) files or directories.
+-   `mkdir`  Make a new directory.
+-   `type`  Tell how a command name is interpreted (builtin, alias, function, or external).
+-   `which`  Show the full path of an executable that would run.
+-   `help`  Display help for a shell builtin.
+-   `man`  View the manual (“manpage”) for a command.
 
 Learning Objectives
 -------------------
