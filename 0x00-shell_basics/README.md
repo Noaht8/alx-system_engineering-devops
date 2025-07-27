@@ -22,7 +22,7 @@ Resources
 
 **man or help**:
 
--   `cd` \t Change directory.
+-   `cd`  Change directory.
 -   `ls`  List files and folders in the current directory.
 -   `pwd`  Print Working Directory—shows your current path.
 -   `less`  View a file one page at a time (with scrolling).
