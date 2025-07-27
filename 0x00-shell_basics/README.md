@@ -432,13 +432,13 @@ ubuntu@ip-172-31-63-244:/tmp/magic$
 ```
 
 ### Creating the magic file
-1. create a plain text file called `school.magic` with the contents
+1. create a plain text file called `school` with the contents
 ```
 0 string SCHOOL School data
 ```
 2. Then compile it into a magic file with:
 ```
-file -C -m school.magic
+file -C -m school
 ```
 `0` → The offset in the file (in bytes). This means: look at byte 0, the very start of the file.
 
