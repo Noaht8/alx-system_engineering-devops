@@ -22,8 +22,8 @@ Resources
 
 **man or help**:
 
--   `cd` &#9;  Change directory.
--   `ls` &#9;  List files and folders in the current directory.
+-   `cd`&#9;Change directory.
+-   `ls` List files and folders in the current directory.
 -   `pwd`  Print Working Directory—shows your current path.
 -   `less`  View a file one page at a time (with scrolling).
 -   `file`  Identify the type of a file by examining its contents.
