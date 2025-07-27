@@ -13,17 +13,17 @@ Resources
 
 **man or help**:
 
--   `chmod` &emsp; Change file permissions - Sets who can read/write/execute a file.
--   `sudo` &emsp;  
--   `su` &emsp; 
--   `chown` &emsp; 
--   `chgrp` &emsp; 
--   `id` &emsp;
--   `groups` &emsp;
--   `whoami` &emsp;
--   `adduser` &emsp; 
--   `useradd` &emsp; 
--   `addgroup` &emsp;
+-   `chmod` &emsp; Change file permissions (Sets who can read/write/execute a file.)
+-   `sudo` &emsp; Run command as superuser (Gives admin rights temporarily.)  
+-   `su` &emsp; Switches to another user (usually root)
+-   `chown` &emsp; Change file owner
+-   `chgrp` &emsp; Change file group
+-   `id` &emsp; Show your user and group IDs
+-   `groups` &emsp; Show your groups
+-   `whoami` &emsp; Show current username
+-   `adduser` &emsp; Add new user
+-   `useradd` &emsp; Low-level user creation
+-   `addgroup` &emsp; Add new group
 
 Learning Objectives
 -------------------
