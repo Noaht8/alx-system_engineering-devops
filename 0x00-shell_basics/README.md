@@ -400,6 +400,12 @@ ubuntu@ubuntu:~/$ ./103-commas
 
 ubuntu@ubuntu:~/$
 ```
+### Flags breakdown:
+`-m` – list files comma-separated, horizontally
+
+`-a` – show all files, including hidden ones (starting with .)
+
+`-p` – append / to directory names to show they're folders
 ## [school.mgc](school.mgc)
 Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
 ```
