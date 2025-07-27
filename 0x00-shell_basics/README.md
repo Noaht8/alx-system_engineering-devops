@@ -23,6 +23,7 @@ Resources
 **man or help**:
 
 -   `cd`
+Change directory.
 -   `ls`
 -   `pwd`
 -   `less`
