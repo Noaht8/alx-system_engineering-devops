@@ -240,9 +240,9 @@ Why use `+X` instead of `+x`?
 
 * `+X` is smarter: it adds x only where it makes sense, e.g., to:
 
-&emsp; * Directories (so they can be accessed/traversed)
+&emsp; &emsp; - Directories (so they can be accessed/traversed)
 
-&emsp; * Already executable files (like scripts or binaries)
+&emsp; &emsp; - Already executable files (like scripts or binaries)
 
 ## [12-directory_permissions](12-directory_permissions)
 Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
