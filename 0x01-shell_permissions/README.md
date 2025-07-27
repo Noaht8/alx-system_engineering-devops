@@ -331,7 +331,7 @@ lrwxrwxrwx 1 vincent  staff    5 Sep 20 15:10 _hello -> hello
 julien@ubuntu:/tmp/h$
 ```
 ### Note
-`-h` – operate on the symlink itself, not the file it points to
+`-h` – operate on the symlink (short for symbolic link) itself, not the file it points to
 
 ## [102-if_only](102-if_only)
 Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
