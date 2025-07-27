@@ -23,19 +23,19 @@ Resources
 **man or help**:
 
 -   `cd` &emsp; Change directory.
--   `ls` List files and folders in the current directory.
--   `pwd`  Print Working Directory—shows your current path.
--   `less`  View a file one page at a time (with scrolling).
--   `file`  Identify the type of a file by examining its contents.
--   `ln`  Create links (Hard link (default) or Symbolic (soft) link)
--   `cp`  Copy files or directories.
--   `mv`  Move or rename files or directories.
--   `rm`  Remove (delete) files or directories.
--   `mkdir`  Make a new directory.
--   `type`  Tell how a command name is interpreted (builtin, alias, function, or external).
--   `which`  Show the full path of an executable that would run.
--   `help`  Display help for a shell builtin.
--   `man`  View the manual (“manpage”) for a command.
+-   `ls` &emsp; List files and folders in the current directory.
+-   `pwd` &emsp;  Print Working Directory—shows your current path.
+-   `less` &emsp;  View a file one page at a time (with scrolling).
+-   `file` &emsp;  Identify the type of a file by examining its contents.
+-   `ln` &emsp;  Create links (Hard link (default) or Symbolic (soft) link)
+-   `cp`  &emsp; Copy files or directories.
+-   `mv`  &emsp; Move or rename files or directories.
+-   `rm` &emsp;  Remove (delete) files or directories.
+-   `mkdir`  &emsp; Make a new directory.
+-   `type`  &emsp; Tell how a command name is interpreted (builtin, alias, function, or external).
+-   `which` &emsp;  Show the full path of an executable that would run.
+-   `help` &emsp;  Display help for a shell builtin.
+-   `man` &emsp;  View the manual (“manpage”) for a command.
 
 Learning Objectives
 -------------------
