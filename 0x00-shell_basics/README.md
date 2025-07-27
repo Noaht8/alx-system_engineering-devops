@@ -22,12 +22,12 @@ Resources
 
 **man or help**:
 
--   `cd` Change directory.
--   `ls` List files and folders in the current directory.
--   `pwd` Print Working Directory—shows your current path.
--   `less` View a file one page at a time (with scrolling).
--   `file` Identify the type of a file by examining its contents.
--   `ln` Create links (Hard link (default) or Symbolic (soft) link)
+-   `cd`  Change directory.
+-   `ls`  List files and folders in the current directory.
+-   `pwd`  Print Working Directory—shows your current path.
+-   `less`  View a file one page at a time (with scrolling).
+-   `file`  Identify the type of a file by examining its contents.
+-   `ln`  Create links (Hard link (default) or Symbolic (soft) link)
 -   `cp`
 -   `mv`
 -   `rm`
