@@ -440,4 +440,11 @@ ubuntu@ip-172-31-63-244:/tmp/magic$
 ```
 file -C -m school.magic
 ```
+`0` → The offset in the file (in bytes). This means: look at byte 0, the very start of the file.
+
+`string` → The data type to check for at that offset. In this case, a plain ASCII string.
+
+`SCHOOL` → The expected value found at that offset. If the file starts with this exact string, it matches.
+
+`School data` → The description to display if the file matches. This is what file will output.
 
