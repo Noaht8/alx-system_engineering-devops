@@ -227,6 +227,23 @@ drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
 -rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$
 ```
+### Answer
+`-R` – recursive: apply to all files and folders under the current directory (.)
+
+`+X` – conditionally add execute (x) permission
+
+#### Note
+`+X` only adds execute permission to directories and to files that already have at least one execute bit set (user/group/other).
+
+Why use `+X` instead of `+x`?
+* `+x` adds execute permission to everything, even to non-executable files like .txt or .jpg.
+
+* `+X` is smarter: it adds x only where it makes sense, e.g., to:
+
+** Directories (so they can be accessed/traversed)
+
+** Already executable files (like scripts or binaries)
+
 ## [12-directory_permissions](12-directory_permissions)
 Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
 ```
