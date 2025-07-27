@@ -236,9 +236,9 @@ julien@ubuntu:/tmp/h$
 `+X` only adds execute permission to directories and to files that already have at least one execute bit set (user/group/other).
 
 Why use `+X` instead of `+x`?
-* `+x` adds execute permission to everything, even to non-executable files like .txt or .jpg.
+* `+x` adds execute permission to everything, even to non-executable files like `.txt` or `.jpg`.
 
-* `+X` is smarter: it adds x only where it makes sense, e.g., to:
+* `+X` is smarter: it adds `x` only where it makes sense, e.g., to:
 
 &emsp; &emsp; - Directories (so they can be accessed/traversed)
 
