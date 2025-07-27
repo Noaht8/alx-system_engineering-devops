@@ -13,17 +13,17 @@ Resources
 
 **man or help**:
 
--   `chmod`
--   `sudo`
--   `su`
--   `chown`
--   `chgrp`
--   `id`
--   `groups`
--   `whoami`
--   `adduser`
--   `useradd`
--   `addgroup`
+-   `chmod` &emsp; Change file permissions - Sets who can read/write/execute a file.
+-   `sudo` &emsp;  
+-   `su` &emsp; 
+-   `chown` &emsp; 
+-   `chgrp` &emsp; 
+-   `id` &emsp;
+-   `groups` &emsp;
+-   `whoami` &emsp;
+-   `adduser` &emsp; 
+-   `useradd` &emsp; 
+-   `addgroup` &emsp;
 
 Learning Objectives
 -------------------
