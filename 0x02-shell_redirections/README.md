@@ -28,6 +28,17 @@ Resources
 -   `rev` &emsp; Reverses lines character-wise.
 -   `cut` &emsp; Cuts sections from each line of input.
 ```
+🔹 What is cut?
+cut is a command that extracts specific parts (columns or characters) from each line of a file or text.
+
+🔹 Common Options
+-d → sets the delimiter (default is TAB)
+
+-f → choose fields (columns)
+
+-c → choose specific characters
+
+Example:
 cut -d ":" -f1 /etc/passwd
 # Shows usernames from passwd file
 ```
