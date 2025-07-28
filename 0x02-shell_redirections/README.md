@@ -40,14 +40,26 @@ cut is a command that extracts specific parts (columns or characters) from each 
 
 Example:
 Suppose users.txt has this:
-```
+
 alice:25:developer
 bob:30:designer
 carol:28:manager
 
-```
-cut -d ":" -f1 /etc/passwd
-# Shows usernames from passwd file
+Show only the names (field 1):
+
+cut -d ":" -f 1 users.txt
+# Output:
+# alice
+# bob
+# carol
+
+Show name and age (fields 1 and 2):
+
+cut -d ":" -f 1,2 users.txt
+# Output:
+# alice:25
+# bob:30
+# carol:28
 ```
 -   `passwd (5)` (*i.e. `man 5 passwd`*) &emsp; This file stores user account info: one line per user.
 
