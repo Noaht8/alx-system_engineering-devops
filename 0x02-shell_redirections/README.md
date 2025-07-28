@@ -15,19 +15,23 @@ Resources
 
 **man or help**:
 
--   `echo`
--   `cat`
--   `head`
--   `tail`
--   `find`
--   `wc`
--   `sort`
--   `uniq`
--   `grep`
--   `tr`
--   `rev`
--   `cut`
--   `passwd (5)` (*i.e. `man 5 passwd`*)
+-   `echo` &emsp; Prints text or variables to the terminal.
+-   `cat` &emsp; Displays the contents of a file.
+-   `head` &emsp; Shows the first lines of a file (default: 10 lines).
+-   `tail` &emsp; Shows the last lines of a file (default: 10 lines).
+-   `find` &emsp; Searches for files and directories in a path.
+-   `wc` &emsp; Counts lines, words, and characters.
+-   `sort` &emsp; Sorts lines of text.
+-   `uniq` &emsp; Removes duplicate adjacent lines (use with sort).
+-   `grep` &emsp; Searches for patterns in files.
+-   `tr` &emsp; Translates or deletes characters.
+-   `rev` &emsp; Reverses lines character-wise.
+-   `cut` &emsp; Cuts sections from each line of input.
+```
+cut -d ":" -f1 /etc/passwd
+# Shows usernames from passwd file
+```
+-   `passwd (5)` (*i.e. `man 5 passwd`*) &emsp; This file stores user account info: one line per user.
 
 Learning Objectives
 -------------------
