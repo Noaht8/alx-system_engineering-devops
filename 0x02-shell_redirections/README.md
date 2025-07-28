@@ -39,6 +39,13 @@ cut is a command that extracts specific parts (columns or characters) from each 
 -c → choose specific characters
 
 Example:
+Suppose users.txt has this:
+```
+alice:25:developer
+bob:30:designer
+carol:28:manager
+
+```
 cut -d ":" -f1 /etc/passwd
 # Shows usernames from passwd file
 ```
