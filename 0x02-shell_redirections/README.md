@@ -3,7 +3,7 @@
 ![Image link](https://blog.eduonix.com/wp-content/uploads/2015/09/Linux-Shell-Scripting-11.png)
 
 ## Author:
-* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>  &#128511;
+* **Noah Tsegay** <[Noaht8](https://github.com/Noaht8)>  😎;
 
 
 
