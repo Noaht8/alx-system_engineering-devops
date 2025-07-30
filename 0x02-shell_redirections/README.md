@@ -378,10 +378,144 @@ total 0
 julien@ubuntu:/tmp/h$
 ```
 ## [11-directories](11-directories)
+Write a script that counts the number of directories and sub-directories in the current directory.
+
+* The current and parent directories should not be taken into account
+* Hidden directories should be counted
+```
+julien@production-503e7013:~/shell/fun_with_the_shell$ ls -lRa
+.:
+total 32
+drwxrwxr-x 3 julien julien 4096 Jan 20 03:53 .
+drwxrwxr-x 3 julien julien 4096 Jan 20 02:58 ..
+-rwxr--r-- 1 julien julien 43 Jan 20 02:59 0-commas
+-rwxr--r-- 1 julien julien 47 Jan 20 02:50 1-empty_casks
+-rwxrw-r-- 1 julien julien 68 Jan 20 03:35 2-gifs
+-rwxrw-r-- 1 julien julien 47 Jan 20 03:53 3-directories
+-rw-rw-r-- 1 julien julien 14 Jan 20 03:35 Makefile
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 test_dir
+
+./test_dir:
+total 16
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 .
+drwxrwxr-x 3 julien julien 4096 Jan 20 03:53 ..
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:40 .horrible_selfie.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 README.md
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:17 docker.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:17 file.sh
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 photos
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 rep.gif
+
+./test_dir/photos:
+total 8
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 .
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 ..
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 cat.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:22 index.html
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 main.gif
+-rw-rw-r-- 1 julien julien 0 Jan 20 03:23 rudy_rigot.gif
+
+./test_dir/rep.gif:
+total 8
+drwxrwxr-x 2 julien julien 4096 Jan 20 03:23 .
+drwxrwxr-x 4 julien julien 4096 Jan 20 03:42 ..
+julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
+3
+julien@production-503e7013:~/shell/fun_with_the_shell$
+```
 ## [12-newest_files](12-newest_files)
+Create a script that displays the 10 newest files in the current directory.
+
+Requirements:
+
+* One file per line
+* Sorted from the newest to the oldest
+```
+alex@ubuntu:/tmp$ ls -l
+total 7
+-rwxr-xr-x 1 501 dialout  32 Sep 27 23:51 0-hello_world
+-rwxr-xr-x 1 501 dialout  46 Sep 28 11:09 10-no_more_js
+-rwxr-xr-x 1 501 dialout  43 Sep 28 11:19 11-directories
+-rwxr-xr-x 1 501 dialout  30 Sep 29 13:43 12-newest_files
+-rwxr-xr-x 1 501 dialout  28 Sep 27 23:54 1-confused_smiley
+-rwxr-xr-x 1 501 dialout  28 Sep 27 23:58 2-hellofile
+-rwxr-xr-x 1 501 dialout  39 Sep 27 23:58 3-twofiles
+-rwxr-xr-x 1 501 dialout  33 Sep 27 23:59 4-lastlines
+-rwxr-xr-x 1 501 dialout  33 Sep 28 00:00 5-firstlines
+-rwxr-xr-x 1 501 dialout  28 Sep 28 00:25 6-third_line
+-rwxr-xr-x 1 501 dialout 110 Sep 28 00:34 7-file
+-rwxr-xr-x 1 501 dialout  36 Sep 28 00:34 8-cwd_state
+-rwxr-xr-x 1 501 dialout  35 Sep 28 00:35 9-duplicate_last_line
+-rw-r--r-- 1 501 dialout  19 Sep 27 23:51 README.md
+alex@ubuntu:/tmp$ ./12-newest_files 
+12-newest_files
+11-directories
+10-no_more_js
+9-duplicate_last_line
+7-file
+8-cwd_state
+6-third_line
+5-firstlines
+4-lastlines
+3-twofiles
+alex@ubuntu:/tmp$
+```
 ## [13-unique](13-unique)
+Create a script that takes a list of words as input and prints only words that appear exactly once.
+
+* Input format: One line, one word
+* Output format: One line, one word
+* Words should be sorted
+```
+julien@ubuntu:/tmp/0x02$ cat list 
+C#
+C
+Javascript
+Perl
+PHP
+PHP
+ASP
+R
+Go
+C#
+C++
+R
+Perl
+Javascript
+Javascript
+Python
+Javascript
+Javascript
+Javascript
+Java
+Java
+Python
+Javascript
+Javascript
+Javascript
+ASP
+julien@ubuntu:/tmp/0x02$ cat list | ./13-unique 
+C
+C++
+Go
+julien@ubuntu:/tmp/0x02$ 
+```
 ## [14-findthatword](14-findthatword)
+Display lines containing the pattern “root” from the file `/etc/passwd`
+```
+$ ./14-findthatword
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+$
+```
 ## [15-countthatword](15-countthatword)
+Display the number of lines that contain the pattern “bin” in the file `/etc/passwd`
+```
+$ ./15-countthatword
+81
+$
+```
 ## [16-whatsnext](16-whatsnext)
 ## [17-hidethisword](17-hidethisword)
 ## [18-letteronly](18-letteronly)
