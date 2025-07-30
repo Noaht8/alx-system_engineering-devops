@@ -118,7 +118,21 @@ ___
 This repository contains the following files:
 
 ## [0-hello_world](0-hello_world)
+Write a script that prints “Hello, World”, followed by a new line to the standard output.
+```
+julien@ubuntu:/tmp/h$ ./0-hello_world 
+Hello, World
+julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
+Hello, World$
+julien@ubuntu:/tmp/h$
+```
 ## [1-confused_smiley](1-confused_smiley)
+Write a script that displays a confused smiley `"(Ôo)'`.
+```
+julien@ubuntu:/tmp/h$ ./1-confused_smiley 
+"(Ôo)'
+julien@ubuntu:/tmp/h$
+```
 ## [2-hellofile](2-hellofile)
 ## [3-twofiles](3-twofiles)
 ## [4-lastlines](4-lastlines)
