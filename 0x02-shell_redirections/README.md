@@ -814,10 +814,33 @@ Write a script that lists all the files with a .gif extension in the current dir
     julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
 ## [102-acrostic](102-acrostic)
+An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. [Read more.](https://en.wikipedia.org/wiki/Acrostic)
+
+Create a script that decodes acrostics that use the first letter of each line.
+
+* The ‘decoded’ message has to end with a new line
+* You are not allowed to use `grep`, `egrep`, `fgrep` or `rgrep`
+```
+julien@ubuntu:/tmp/0x02$ cat An\ Acrostic 
+Elizabeth it is in vain you say
+Love not"—thou sayest it in so sweet a way:
+In vain those words from thee or L.E.L.
+Zantippe's talents had enforced so well:
+Ah! if that language from thy heart arise,
+Breath it less gently forth—and veil thine eyes.
+Endymion, recollect, when Luna tried
+To cure his love—was cured of all beside—
+His follie—pride—and passion—for he died.
+julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic 
+ELIZABETH
+julien@ubuntu:/tmp/0x02$
+```
+## [103-the_biggest_fan](103-the_biggest_fan)
 Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 
 * Order by number of requests, most active host or IP at the top
 * You are not allowed to use `grep`, `egrep`, `fgrep` or `rgrep`
+
 Format:
 ```
 host    When possible, the hostname making the request. Uses the IP address if the hostname was unavailable.
@@ -867,4 +890,3 @@ s150.phxslip4.indirect.com
 torben.dou.dk
 julien@ubuntu:/tmp/0x02$
 ```
-## [103-the_biggest_fan](103-the_biggest_fan)
