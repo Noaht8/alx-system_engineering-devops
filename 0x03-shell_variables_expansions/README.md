@@ -97,7 +97,7 @@ Note: You do not have to learn about `awk`, `tar`, `bzip2`, `date`, `scp`, `ulim
 ## Contents
 ___
 
-This repository contains the following files:
+### This repository contains the following files:
 
 ## [0-alias](0-alias)
 Create a script that creates an alias.
