@@ -17,7 +17,7 @@ Resources
 
 **man or help**:
 
--   `printenv`
+-   `printenv` &emp; Shows environment variables (like PATH, HOME, etc.).
 -   `set`
 -   `unset`
 -   `export`
