@@ -17,15 +17,31 @@ Resources
 
 **man or help**:
 
--   `printenv` &emp; Shows environment variables (like PATH, HOME, etc.).
--   `set`
--   `unset`
--   `export`
--   `alias`
--   `unalias`
--   `.`
--   `source`
--   `printf`
+-   `printenv` &emsp; Shows environment variables (like PATH, HOME, etc.).
+-   `set` &emsp; Shows all shell variables, including environment variables and user-defined ones. It can also be used to set shell options.
+-   `unset` &emsp; Removes (deletes) a variable or function.
+-   `export` &emsp; Marks a variable so that it’s passed to child processes (like other scripts).
+```
+MY_VAR="hello"
+export MY_VAR
+
+➡️ Now $MY_VAR will be available in any script or program you run.
+```
+-   `alias` &emsp; Creates a shortcut for a command.
+-   `unalias` &emsp; Removes an alias.
+-   `.` &emsp; Same as source. Runs a script in the current shell, not in a sub-shell.
+```
+. myscript.sh
+
+➡️ Executes myscript.sh and keeps any variables it sets.
+```
+-   `source` &emsp; Same as `.` but more readable. Used to load files or scripts into the current shell.
+```
+source ~/.bashrc
+
+➡️ Loads your shell configuration changes immediately.
+```
+-   `printf` &emsp; Formats and prints text (like C’s printf, more flexible than echo).
 
 Learning Objectives
 -------------------
