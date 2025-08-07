@@ -1,5 +1,21 @@
 # Loops, conditions and parsing
 
+Background Context
+------------------
+
+[![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220115T182752Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9d73d141cd49b81a0d81762b039e1c7d35276c1485e253db49676853cd7426f2)](https://youtu.be/BC2neyc5GcI)
+
+Resources
+---------
+
+**Read or watch**:
+
+-   [Loops sample](https://alx-intranet.hbtn.io/rltoken/wT98UJfv_E2tk4yP9PcLLw "The <code>for</code> loop" target="_blank">The <code>for</code> loop</a> </li>
+    <li><a href=")
+-   [Variable assignment and arithmetic](https://alx-intranet.hbtn.io/rltoken/olvOKX699pq50rkHRE5cSA "Variable assignment and arithmetic")
+-   [Comparison operators](https://alx-intranet.hbtn.io/rltoken/HxohzllkOWh0t4dy_HptIQ "Comparison operators")
+-   [File test operators](https://alx-intranet.hbtn.io/rltoken/g8of2ABPEJfCNtPrDQaqVw "File test operators")
+-   [Make your scripts portable](https://alx-intranet.hbtn.io/rltoken/O0Ay21p7tDhfLMsYbtAKug "Make your scripts portable")
 
 **man or help**:
 
