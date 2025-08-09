@@ -325,7 +325,7 @@ echo $((2#$BINARY))
 
 `echo "obase=2; 7" | bc`
 
--  result is 7
+-  result is 0111
 
   
 
