@@ -309,15 +309,25 @@ echo $((2#$BINARY))
 
 -  `echo` → prints the result.
 
-To convert `base 2` to `base 10`
+#### To convert `base 2` to `base 10`
 
-`echo "obase=2; $DECIMAL" | bc`
+`echo "ibase=2; 0111" | bc`
 
--  `obase=2` → sets output base to binary.
+-  `ibase=2` → sets input base.
 
 -  `$DECIMAL` → the decimal number from your variable.
 
 -  `bc` → the command-line calculator that does the conversion.
+
+-  result is 7
+
+#### To convert `base 10` to `base 2`
+
+`echo "obase=2; 7" | bc`
+
+-  result is 7
+
+  
 
 
 ## [12-combinations](12-combinations)
