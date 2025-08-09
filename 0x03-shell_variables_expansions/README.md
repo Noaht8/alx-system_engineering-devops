@@ -299,6 +299,16 @@ julien@production-503e7013:~/$ ./11-binary_to_decimal
 julien@production-503e7013:~/$
 
 ```
+### Solution
+```
+echo $((2#$BINARY))
+
+- 2#$BINARY → tells Bash to interpret the value as base-2.
+
+- $(( ... )) → arithmetic expansion evaluates and converts it to decimal.
+
+- echo → prints the result.
+```
 ## [12-combinations](12-combinations)
 Create a script that prints all possible combinations of two letters, except `oo`.
 
