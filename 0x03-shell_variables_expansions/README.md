@@ -299,16 +299,27 @@ julien@production-503e7013:~/$ ./11-binary_to_decimal
 julien@production-503e7013:~/$
 
 ```
-### Solution
+### Solution (Plus)
 ```
 echo $((2#$BINARY))
-
-- 2#$BINARY → tells Bash to interpret the value as base-2.
-
-- $(( ... )) → arithmetic expansion evaluates and converts it to decimal.
-
-- echo → prints the result.
 ```
+-  `2#$BINARY` → tells Bash to interpret the value as base-2.
+
+-  `$(( ... ))` → arithmetic expansion evaluates and converts it to decimal.
+
+-  `echo` → prints the result.
+
+To convert `base 2` to `base 10`
+
+`echo "obase=2; $DECIMAL" | bc`
+
+-  `obase=2` → sets output base to binary.
+
+-  `$DECIMAL` → the decimal number from your variable.
+
+-  `bc` → the command-line calculator that does the conversion.
+
+
 ## [12-combinations](12-combinations)
 Create a script that prints all possible combinations of two letters, except `oo`.
 
