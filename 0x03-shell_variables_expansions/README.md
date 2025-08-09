@@ -410,6 +410,9 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./101-rot13 < quote
 julien@production-503e7013:~/shell/fun_with_the_shell$
 
 ```
+#### Solution Notes
+Letters `A-Z` are mapped to `N-Z` then `A-M`.
+Same for lowercase `a-z` → `n-z` then `a-m`.
 ## [102-odd](102-odd)
 Write a script that prints every other line from the input, starting with the first line.
 
