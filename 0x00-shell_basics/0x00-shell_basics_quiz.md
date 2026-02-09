@@ -11,3 +11,15 @@ pwd
 cd
 ls
 list
+
+## Question #2
+### What does LTS stand for?
+
+
+Long Term Support
+
+
+Long Time Support
+
+
+Last Terrible Service
