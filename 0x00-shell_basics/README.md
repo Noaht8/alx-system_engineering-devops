@@ -9,11 +9,11 @@ Resources
 
 **Read or watch**:
 
--   [What Is "The Shell"?]()
--   [Navigation]()
--   [Looking Around]()
--   [A Guided Tour]()
--   [Manipulating Files]()
+-   [What Is "The Shell"?](https://linuxcommand.org/lc3_lts0010.php)
+-   [Navigation](https://linuxcommand.org/lc3_lts0020.php)
+-   [Looking Around](https://linuxcommand.org/lc3_lts0030.php)
+-   [A Guided Tour](https://linuxcommand.org/lc3_lts0040.php)
+-   [Manipulating Files](https://linuxcommand.org/lc3_lts0050.php)
 -   [Working With Commands]()
 -   [Reading Man pages]()
 -   [Keyboard shortcuts for Bash]()
