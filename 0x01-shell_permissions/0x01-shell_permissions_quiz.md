@@ -3,13 +3,24 @@
 ## Question #0
 ### What is the permission value for a file read only for the group owner?
 
-040
+✅ 040
 
 050
 
 070
 
 060
+
+## Question #1
+### Which command should I use for changing a file permission?
+
+su
+
+✅  chmod
+
+chgrp
+
+chown
 
 ## Question #2
 ### What is the numerical value for the ----w---x permission?
@@ -18,7 +29,7 @@
 
 121
 
-021
+✅ 021
 
 221
 
@@ -29,7 +40,7 @@
 
 621
 
-700
+✅ 700
 
 704
 
@@ -42,14 +53,14 @@ chmod
 
 chgrp
 
-chown
+✅ chown
 
 ## Question #5
 ### What is the numerical value for the r-xr--r-- permission?
 
 522
 
-544
+✅ 544
 
 411
 
@@ -62,4 +73,4 @@ chown
 
 644
 
-777
+✅ 777
