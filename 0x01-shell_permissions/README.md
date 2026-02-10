@@ -9,7 +9,7 @@ Resources
 
 **Read or watch**:
 
--   [Permissions](https://alx-intranet.hbtn.io/rltoken/aQmRB6ms-SDHUhqY0Rsa3g "Permissions")
+-   [Permissions](https://linuxcommand.org/lc3_lts0090.php)
 
 **man or help**:
 
