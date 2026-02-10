@@ -5,72 +5,72 @@
 
 ✅ 040
 
-050
+❌ 050
 
-070
+❌ 070
 
-060
+❌ 060
 
 ## Question #1
 ### Which command should I use for changing a file permission?
 
-su
+❌ su
 
 ✅  chmod
 
-chgrp
+❌ chgrp
 
-chown
+❌ chown
 
 ## Question #2
 ### What is the numerical value for the ----w---x permission?
 
-123
+❌ 123
 
-121
+❌ 121
 
 ✅ 021
 
-221
+❌ 221
 
 ## Question #3
 ### What is the numerical value for the rwx------ permission?
 
-600
+❌ 600
 
-621
+❌ 621
 
 ✅ 700
 
-704
+❌ 704
 
 ## Question #4
 ### Which command should I use for changing a file owner?
 
-su
+❌ su
 
-chmod
+❌ chmod
 
-chgrp
+❌ chgrp
 
 ✅ chown
 
 ## Question #5
 ### What is the numerical value for the r-xr--r-- permission?
 
-522
+❌ 522
 
 ✅ 544
 
-411
+❌ 411
 
-644
+❌ 644
 
 ## Question #6
 ### What is the permission value for a file without any restriction?
 
-600
+❌ 600
 
-644
+❌ 644
 
 ✅ 777
