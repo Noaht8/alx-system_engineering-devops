@@ -7,7 +7,7 @@
 
 !
 
-`#`
+✅ `#`
 
 //
 
@@ -20,12 +20,12 @@
 
 &
 
->
+✅ >
 
 ## Question #2
 ### Which symbol should I use to escape a special character?
 
-\
+✅ \
 
 !
 
@@ -38,7 +38,7 @@ $
 
 grep
 
-cat
+✅ cat
 
 tail
 
@@ -47,7 +47,7 @@ head
 ## Question #4
 ### Which symbol should I use to redirect the standard output to a file (appending to the file)?
 
->>
+✅ >>
 
 2>
 
@@ -64,12 +64,12 @@ head 11 my_file
 
 tail 11 my_file
 
-tail -n 11 my_file
+✅ tail -n 11 my_file
 
 ## Question #6
 ### Which symbol should I use to redirect the error output to the standard output?
 
-2>&1
+✅ 2>&1
 
 2>
 
