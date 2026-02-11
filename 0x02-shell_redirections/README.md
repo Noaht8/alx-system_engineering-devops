@@ -10,8 +10,8 @@ Resources
 
 **Read or watch**:
 
--   [Shell, I/O Redirection](https://alx-intranet.hbtn.io/rltoken/fGOQQXRKbvOcd1qLRxHzLQ "Shell, I/O Redirection")
--   [Special Characters](https://alx-intranet.hbtn.io/rltoken/c1pz13vke3HPH0S8iALbtw "Special Characters")
+-   [Shell, I/O Redirection](https://linuxcommand.org/lc3_lts0070.php)
+-   [Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)
 
 **man or help**:
 
