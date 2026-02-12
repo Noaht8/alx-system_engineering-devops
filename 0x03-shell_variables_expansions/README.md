@@ -9,7 +9,7 @@ Resources
 **Read or watch**:
 
 -   [Expansions](https://linuxcommand.org/lc3_lts0080.php)
--   [Shell Arithmetic](https://alx-intranet.hbtn.io/rltoken/PLSUQnBcKKU5eEgRfRDlug "Shell Arithmetic")
+-   [Shell Arithmetic](https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html)
 -   [Variables](https://alx-intranet.hbtn.io/rltoken/SvdGNZJjKsPghzZEhaWu4Q "Variables")
 -   [Shell initialization files](https://alx-intranet.hbtn.io/rltoken/tqud57kjsSYgDfeZDlwl3g "Shell initialization files")
 -   [The alias Command](https://alx-intranet.hbtn.io/rltoken/zCemKQ8f1CxmODIs9dmcWg "The alias Command")
