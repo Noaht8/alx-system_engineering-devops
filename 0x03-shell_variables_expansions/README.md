@@ -10,7 +10,7 @@ Resources
 
 -   [Expansions](https://linuxcommand.org/lc3_lts0080.php)
 -   [Shell Arithmetic](https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html)
--   [Variables](https://alx-intranet.hbtn.io/rltoken/SvdGNZJjKsPghzZEhaWu4Q "Variables")
+-   [Variables](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
 -   [Shell initialization files](https://alx-intranet.hbtn.io/rltoken/tqud57kjsSYgDfeZDlwl3g "Shell initialization files")
 -   [The alias Command](https://alx-intranet.hbtn.io/rltoken/zCemKQ8f1CxmODIs9dmcWg "The alias Command")
 -   [Technical Writing](https://alx-intranet.hbtn.io/rltoken/gzXkaQsMeeNHSK3LbaKZeQ "Technical Writing")
