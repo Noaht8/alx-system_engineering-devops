@@ -13,7 +13,7 @@ Resources
 -   [Variables](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
 -   [Shell initialization files](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html)
 -   [The alias Command](https://www.linfo.org/alias.html)
--   [Technical Writing](https://alx-intranet.hbtn.io/rltoken/gzXkaQsMeeNHSK3LbaKZeQ "Technical Writing")
+-   [Technical Writing](technical_writing.pdf)
 
 **man or help**:
 
