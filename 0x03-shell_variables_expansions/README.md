@@ -8,7 +8,7 @@ Resources
 
 **Read or watch**:
 
--   [Expansions](https://alx-intranet.hbtn.io/rltoken/oXnzBjLBA9t9dr7WuftdmQ "Expansions")
+-   [Expansions](https://linuxcommand.org/lc3_lts0080.php)
 -   [Shell Arithmetic](https://alx-intranet.hbtn.io/rltoken/PLSUQnBcKKU5eEgRfRDlug "Shell Arithmetic")
 -   [Variables](https://alx-intranet.hbtn.io/rltoken/SvdGNZJjKsPghzZEhaWu4Q "Variables")
 -   [Shell initialization files](https://alx-intranet.hbtn.io/rltoken/tqud57kjsSYgDfeZDlwl3g "Shell initialization files")
