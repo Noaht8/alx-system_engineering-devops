@@ -10,11 +10,11 @@ Resources
 
 **Read or watch**:
 
--   [Loops sample](
--   [Variable assignment and arithmetic](https://alx-intranet.hbtn.io/rltoken/olvOKX699pq50rkHRE5cSA "Variable assignment and arithmetic")
--   [Comparison operators](https://alx-intranet.hbtn.io/rltoken/HxohzllkOWh0t4dy_HptIQ "Comparison operators")
--   [File test operators](https://alx-intranet.hbtn.io/rltoken/g8of2ABPEJfCNtPrDQaqVw "File test operators")
--   [Make your scripts portable](https://alx-intranet.hbtn.io/rltoken/O0Ay21p7tDhfLMsYbtAKug "Make your scripts portable")
+-   [Loops sample]()
+-   [Variable assignment and arithmetic]()
+-   [Comparison operators]()
+-   [File test operators]()
+-   [Make your scripts portable]()
 
 **man or help**:
 
