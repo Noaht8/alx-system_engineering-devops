@@ -10,9 +10,9 @@ Resources
 
 **Read or watch**:
 
--   [Loops sample]()
--   [Variable assignment and arithmetic]()
--   [Comparison operators]()
+-   [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
+-   [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)
+-   [Comparison operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
 -   [File test operators]()
 -   [Make your scripts portable]()
 
