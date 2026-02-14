@@ -38,3 +38,5 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - Your Bash script must pass `Shellcheck` (version `0.7.0` via `apt-get`) without any error
 - The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 - The second line of all your Bash scripts should be a comment explaining what is the script doing
+## More Info
+For those who want to know more and learn about all signals, check out this [article](https://www.computerhope.com/unix/signals.htm).
