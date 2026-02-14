@@ -113,3 +113,9 @@ statd      547  0.0  0.1  21536   852 ?        Ss   Feb13   0:00 rpc.statd -L
 sylvain@ubuntu$
 ```
 ## [2-show_your_bash_pid](2-show_your_bash_pid)
+Using your previous exercise command, write a Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process.
+
+Requirements:
+
+- You cannot use `pgrep`
+- The third line of your script must be `# shellcheck disable=SC2009` (for more info about ignoring `shellcheck` error [here](https://github.com/koalaman/shellcheck/wiki/Ignore))
