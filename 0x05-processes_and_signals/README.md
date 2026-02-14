@@ -112,3 +112,4 @@ root       518  0.0  0.1  23416   644 ?        Ss   Feb13   0:00 rpcbind
 statd      547  0.0  0.1  21536   852 ?        Ss   Feb13   0:00 rpc.statd -L
 sylvain@ubuntu$
 ```
+## [2-show_your_bash_pid](2-show_your_bash_pid)
