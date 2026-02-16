@@ -171,6 +171,7 @@ Write a Bash script that stops `4-to_infinity_and_beyond` process.
 
 Requirements:
 - You must use `kill`
+
 Terminal #0
 ```
 sylvain@ubuntu$ ./4-to_infinity_and_beyond
