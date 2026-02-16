@@ -127,3 +127,4 @@ sylvain   4479  0.0  0.1  10460   912 pts/0    S+   03:40   0:00                
 sylvain@ubuntu$
 ```
 Here we can see that my Bash PID is `4404`.
+## [3-show_your_bash_pid_made_easy](3-show_your_bash_pid_made_easy)
