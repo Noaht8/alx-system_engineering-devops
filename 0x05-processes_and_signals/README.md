@@ -198,3 +198,4 @@ sylvain@ubuntu$ ./5-dont_stop_me_now
 sylvain@ubuntu$
 ```
 I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
+## [6-stop_me_if_you_can](6-stop_me_if_you_can)
