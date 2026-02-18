@@ -322,9 +322,9 @@ Starting `100-process_and_pid_file` in the terminal #0 and then killing it in th
 ## [101-manage_my_process](101-manage_my_process),  [manage_my_process](manage_my_process)
 ![](manage_my_process.jpg)
 Read:
-- &
-- init.d
-- Daemon
-- Positional parameters
+- [&](https://bashitout.com/2013/05/18/Ampersands-on-the-command-line.html)
+- [init.d](https://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/)
+- [Daemon](https://en.wikipedia.org/wiki/Daemon_%28computing%29)
+- [Positional parameters](https://www.gnu.org/software/bash/manual/html_node/Positional-Parameters.html)
 
 man: `sudo`
