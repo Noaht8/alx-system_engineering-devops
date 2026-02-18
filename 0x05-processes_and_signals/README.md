@@ -320,3 +320,4 @@ sylvain@ubuntu$
 ```
 Starting `100-process_and_pid_file` in the terminal #0 and then killing it in the terminal #1.
 ## [101-manage_my_process](101-manage_my_process),  [manage_my_process](manage_my_process)
+![](manage_my_process.jpg)
