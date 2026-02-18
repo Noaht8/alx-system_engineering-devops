@@ -287,6 +287,7 @@ Write a Bash script that:
 - Displays `I hate the kill command` when receiving a SIGTERM signal
 - Displays `Y U no love me?!` when receiving a SIGINT signal
 - Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
+![](process_and_pid.jpg)
 ```
 sylvain@ubuntu$ sudo ./100-process_and_pid_file
 To infinity and beyond
