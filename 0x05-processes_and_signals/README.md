@@ -391,6 +391,8 @@ sylvain@ubuntu$
 ```
 ## [102-zombie.c](102-zombie.c)
 ![](zombie.jpg)
+
+
 Read [what a zombie process is.](https://zombieprocess.wordpress.com/what-is-a-zombie-process/)
 
 Write a C program that creates 5 zombie processes.
