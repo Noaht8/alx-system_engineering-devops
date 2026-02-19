@@ -390,3 +390,4 @@ I am alive!
 sylvain@ubuntu$ 
 ```
 ## [102-zombie.c](102-zombie.c)
+![](zombie.jpg)
