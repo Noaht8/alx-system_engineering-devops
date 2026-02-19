@@ -357,3 +357,35 @@ Requirements:
 - Displays `Usage: manage_my_process {start|stop|restart}` if any other argument or no argument is passed
 
 Note that this init script is far from being perfect (but good enough for the sake of manipulating process and PID file), for example we do not handle the case where we check if a process is already running when doing `./101-manage_my_process start`, in our case it will simply create a new process instead of saying that it is already started.
+```
+sylvain@ubuntu$ sudo ./101-manage_my_process
+Usage: manage_my_process {start|stop|restart}
+sylvain@ubuntu$ sudo ./101-manage_my_process start
+manage_my_process started
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+I am alive!
+I am alive!
+I am alive!
+I am alive!
+^C
+sylvain@ubuntu$ sudo ./101-manage_my_process stop
+manage_my_process stopped
+sylvain@ubuntu$ cat /var/run/my_process.pid 
+cat: /var/run/my_process.pid: No such file or directory
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+^C
+sylvain@ubuntu$ sudo ./101-manage_my_process start
+manage_my_process started
+sylvain@ubuntu$ cat /var/run/my_process.pid 
+11864
+sylvain@ubuntu$ sudo ./101-manage_my_process restart
+manage_my_process restarted
+sylvain@ubuntu$ cat /var/run/my_process.pid 
+11918
+sylvain@ubuntu$ tail -f -n0 /tmp/my_process 
+I am alive!
+I am alive!
+I am alive!
+^C
+sylvain@ubuntu$ 
+```
