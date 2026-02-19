@@ -435,3 +435,4 @@ sylvain  13531  0.0  0.0      0     0 pts/0    Z+   01:19   0:00 [zombie] <defun
 sylvain  13533  0.0  0.1  10460   964 pts/2    S+   01:19   0:00 grep --color=auto -e Z+.*<defunct>
 sylvain@ubuntu$
 ```
+In Terminal #0, I start by compiling `102-zombie.c` and executing `zombie` which creates 5 zombie processes. In Terminal #1, I display the list of processes and look for lines containing `Z+.*<defunct>` which catches zombie process.
