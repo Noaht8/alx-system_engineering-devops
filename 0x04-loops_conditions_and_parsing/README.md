@@ -74,3 +74,6 @@ Passing `Shellcheck`:
 ![](pic2.png)
 
 For every feedback, Shellcheck will provide a code that you can use to get more information about the issue, for example for code `SC2034`, you can browse [https://github.com/koalaman/shellcheck/wiki/SC2034](https://alx-intranet.hbtn.io/rltoken/dxp49_rfO4_9Yjtcg59exg "https://github.com/koalaman/shellcheck/wiki/SC2034").
+
+## Contents
+### This repository contains the following files:
