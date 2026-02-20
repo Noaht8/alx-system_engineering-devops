@@ -77,3 +77,4 @@ For every feedback, Shellcheck will provide a code that you can use to get more 
 
 ## Contents
 ### This repository contains the following files:
+## [0-RSA_public_key.pub](0-RSA_public_key.pub)
