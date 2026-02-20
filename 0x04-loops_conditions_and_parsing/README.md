@@ -78,3 +78,15 @@ For every feedback, Shellcheck will provide a code that you can use to get more 
 ## Contents
 ### This repository contains the following files:
 ## [0-RSA_public_key.pub](0-RSA_public_key.pub)
+Read for this task:
+
+- [Linux and Mac OS users](https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys)
+- [Windows users](https://docs.rackspace.com/docs/generating-rsa-keys-with-ssh-puttygen)
+
+man: `ssh-keygen`
+
+You will soon have to manage your own **servers** concept page hosted on remote [data centers](https://www.youtube.com/watch?v=iuqXFC_qIvA&t=46s). We need to set them up with your RSA public key so that you can access them via SSH.
+
+Create a RSA key pair.
+
+Requirements:
