@@ -255,3 +255,12 @@ bad luck from Italy
 sylvain@ubuntu$ 
 ```
 ## [7-clock](7-clock)
+Write a Bash script that displays the time for 12 hours and 59 minutes:
+
+- display hours from 0 to 12
+- display minutes from 1 to 59
+
+Requirements:
+
+- You must use the `while` loop (`for` and `until` are forbidden)
+Note that in this example, we only display the first 70 lines using the `head` command.
