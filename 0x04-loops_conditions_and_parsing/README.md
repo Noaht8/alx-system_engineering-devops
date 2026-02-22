@@ -227,3 +227,30 @@ Requirements:
 
 - You must use the `while` loop (`for` and `until` are forbidden)
 - You must use the `case` statement
+```
+sylvain@ubuntu$ ./6-superstitious_numbers
+1
+2
+3
+4
+bad luck from China
+5
+6
+7
+8
+9
+bad luck from Japan
+10
+11
+12
+13
+14
+15
+16
+17
+bad luck from Italy
+18
+19
+20
+sylvain@ubuntu$ 
+```
