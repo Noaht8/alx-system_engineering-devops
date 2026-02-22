@@ -344,6 +344,7 @@ Write a Bash script that displays:
 - The content of the current directory
 - In a list format
 - Where only the part of the name after the first dash is displayed (refer to the example)
+
 Requirements:
 
 - You must use the `for` loop (`while` and `until` are forbidden)
