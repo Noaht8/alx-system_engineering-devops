@@ -387,3 +387,26 @@ Requirements:
   - if the file is not empty: `school file is not empty`
   - if the file is a regular file: `school is a regular file`
   - if the file is not a regular file: (nothing)
+
+```
+sylvain@ubuntu$ file school
+school: cannot open `school' (No such file or directory)
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+school file does not exist
+sylvain@ubuntu$ touch school
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+school file exists
+school file is empty
+school is a regular file
+sylvain@ubuntu$ echo 'betty' > school 
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+school file exists
+school file is not empty
+school is a regular file
+sylvain@ubuntu$ rm school 
+sylvain@ubuntu$ mkdir school
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+school file exists
+school file is not empty
+sylvain@ubuntu$ 
+```
