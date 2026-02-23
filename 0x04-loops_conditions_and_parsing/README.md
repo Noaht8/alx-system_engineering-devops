@@ -410,3 +410,4 @@ school file exists
 school file is not empty
 sylvain@ubuntu$ 
 ```
+## [10-fizzbuzz](10-fizzbuzz)
