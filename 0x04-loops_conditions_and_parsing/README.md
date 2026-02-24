@@ -572,3 +572,4 @@ The user puppet is part of the 114 gang, lives in /var/lib/puppet and rides /bin
 The user ubuntu is part of the 1001 gang, lives in /home/ubuntu and rides /bin/bash. 1001's place is protected by the passcode x, more info about the user here: Ubuntu
 sylvain@ubuntu$
 ```
+## [102-lets_parse_apache_logs](102-lets_parse_apache_logs)
