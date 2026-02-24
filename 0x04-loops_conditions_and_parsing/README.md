@@ -525,6 +525,7 @@ ubuntu:1001:/home/ubuntu
 sylvain@ubuntu$ 
 ```
 ## [101-tell_the_story_of_passwd](101-tell_the_story_of_passwd)
+![](101.jpg)
 Read:
 
 - [IFS (internal field separator)](https://tldp.org/LDP/abs/html/internalvariables.html)
