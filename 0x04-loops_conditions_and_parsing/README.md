@@ -530,7 +530,7 @@ Read:
 - IFS (internal field separator)
 - Understanding /etc/passwd
 
-The file `/etc/passwd` has already been covered in a previous project and you should be familiar with it. Today we will make up a story based on it.
+The file `/etc/passwd` has already been covered in a [previous project](../0x03-shell_variables_expansions) and you should be familiar with it. Today we will make up a story based on it.
 
 Write a Bash script that displays the content of the file `/etc/passwd`, using the `while` loop + IFS.
 
