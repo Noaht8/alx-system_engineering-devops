@@ -592,3 +592,18 @@ Requirement:
 - You must use `awk`
 - You are not allowed to use `while`, `for`, `until` and `cut`
 - Download and commit the [apache-access.log file](apache-access.log) along with your answers files
+
+```
+sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
+185.130.5.207 301
+185.130.5.207 301
+91.224.140.223 200
+62.210.142.23 304
+92.222.20.166 304
+180.76.15.19 200
+2.1.201.36 304
+198.58.99.82 304
+50.116.30.23 304
+209.133.111.211 200
+sylvain@ubuntu$
+```
