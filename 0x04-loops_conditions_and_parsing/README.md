@@ -621,3 +621,18 @@ Requirements:
   - See example
 - You must use `awk`
 - You are not allowed to use `while`, `for`, `until` and `cut`
+
+```
+sylvain@ubuntu$ ./103-dig_the-data | head -n 10
+    141 130.0.236.153 200
+    140 62.210.250.66 200
+    117 103.243.26.232 404
+    67 195.154.172.143 200
+    60 78.154.190.29 200
+    45 195.154.172.59 200
+    41 62.210.248.185 200
+    41 167.114.156.198 200
+    36 2.1.201.36 304
+    36 195.154.172.53 200
+sylvain@ubuntu$
+```
