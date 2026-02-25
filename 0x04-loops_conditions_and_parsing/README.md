@@ -575,6 +575,7 @@ sylvain@ubuntu$
 ```
 ## [102-lets_parse_apache_logs](102-lets_parse_apache_logs)
 ![](102.jpg)
+
 [Apache](https://en.wikipedia.org/wiki/Apache_HTTP_Server) is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
 
 As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
