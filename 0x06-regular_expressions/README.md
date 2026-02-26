@@ -20,3 +20,10 @@ sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 sylvain@ubuntu$ ./example.rb 127.0.0.a
 ```
+## Resources
+### Read or watch:
+- Regular expressions - basics
+- Regular expressions - advanced
+- Rubular is your best friend
+- Use a regular expression against a problem: now you have 2 problems
+- Learn Regular Expressions with simple, interactive exercises
