@@ -59,3 +59,4 @@ SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
 $
 ```
+## [1-repetition_token_0.rb](1-repetition_token_0.rb)
