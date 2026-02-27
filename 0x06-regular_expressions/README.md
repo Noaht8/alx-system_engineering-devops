@@ -42,3 +42,4 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 ### This repository contains the following files:
 
 ## [0-simply_match_school.rb](0-simply_match_school.rb)
+![](0.png)
