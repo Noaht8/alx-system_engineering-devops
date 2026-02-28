@@ -122,3 +122,4 @@ sylvain@ubuntu$ ./6-phone_number.rb "415-504-9898" | cat -e
 $
 sylvain@ubuntu$
 ```
+## [7-OMG_WHY_ARE_YOU_SHOUTING.rb](7-OMG_WHY_ARE_YOU_SHOUTING.rb)
