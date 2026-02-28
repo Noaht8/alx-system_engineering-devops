@@ -43,6 +43,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 
 ## [0-simply_match_school.rb](0-simply_match_school.rb)
 ![](0.png)
+
 Requirements:
 
 - The regular expression must match `School`
@@ -61,6 +62,7 @@ $
 ```
 ## [1-repetition_token_0.rb](1-repetition_token_0.rb)
 ![](1.png)
+
 Requirements:
 
 - Find the regular expression that will match the above cases
@@ -68,6 +70,7 @@ Requirements:
 
 ## [2-repetition_token_1.rb](2-repetition_token_1.rb)
 ![](2.png)
+
 Requirements:
 
 - Find the regular expression that will match the above cases
@@ -75,12 +78,14 @@ Requirements:
 
 ## [3-repetition_token_2.rb](3-repetition_token_2.rb)
 ![](3.png)
+
 Requirements:
 
 - Find the regular expression that will match the above cases
 - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 ## [4-repetition_token_3.rb](4-repetition_token_3.rb)
 ![](4.png)
+
 Requirements:
 
 - Find the regular expression that will match the above cases
@@ -124,6 +129,7 @@ sylvain@ubuntu$
 ```
 ## [7-OMG_WHY_ARE_YOU_SHOUTING.rb](7-OMG_WHY_ARE_YOU_SHOUTING.rb)
 ![](7.jpg)
+
 Requirement:
 
 - The regular expression must be only matching: capital letters
