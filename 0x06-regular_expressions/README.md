@@ -123,6 +123,7 @@ $
 sylvain@ubuntu$
 ```
 ## [7-OMG_WHY_ARE_YOU_SHOUTING.rb](7-OMG_WHY_ARE_YOU_SHOUTING.rb)
+![](7.jpg)
 Requirement:
 
 - The regular expression must be only matching: capital letters
