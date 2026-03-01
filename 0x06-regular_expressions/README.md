@@ -109,7 +109,7 @@ sylvain@ubuntu$
 $
 ```
 ## [6-phone_number.rb](6-phone_number.rb)
-This task is brought to you by a professional advisor Neha Jain, Senior Software Engineer at LinkedIn.
+This task is brought to you by a professional advisor [Neha Jain](https://x.com/_nehajain), Senior Software Engineer at LinkedIn.
 
 Requirement:
 
