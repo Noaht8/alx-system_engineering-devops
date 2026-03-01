@@ -156,6 +156,6 @@ Requirements:
   - The receiver phone number or name (including country code if present)
   - The flags that were used
 
-You can find a [log file here].
+You can find a [log file here](text_messages.zip).
 
 Example:
