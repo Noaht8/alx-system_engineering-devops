@@ -82,3 +82,6 @@ sylvain@ubuntu$
 Source for question 1 [here](1.jpeg)
 
 ## Contents
+## This repository contains the following files:
+
+## [0-OSI_model](0-OSI_model)
