@@ -118,3 +118,5 @@ How is the OSI model organized?
 1. Alphabetically
 2. From the lowest to the highest level
 3. Randomly
+
+## [1-types_of_network](1-types_of_network)
