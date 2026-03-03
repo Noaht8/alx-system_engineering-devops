@@ -141,3 +141,5 @@ What network do you use when you browse www.google.com from your smartphone (not
 1. Internet
 2. WAN
 3. LAN
+
+## [2-MAC_and_IP_address](2-MAC_and_IP_address)
