@@ -143,6 +143,7 @@ What network do you use when you browse www.google.com from your smartphone (not
 3. LAN
 
 ## [2-MAC_and_IP_address](2-MAC_and_IP_address)
+![](2.jpg)
 
 Questions:
 
