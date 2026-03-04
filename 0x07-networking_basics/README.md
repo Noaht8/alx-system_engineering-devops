@@ -224,3 +224,4 @@ unix  2      [ ACC ]     STREAM     LISTENING     9190     1087/acpid          /
 unix  2      [ ACC ]     SEQPACKET  LISTENING     7156     378/systemd-udevd   /run/udev/control
 sylvain@ubuntu$
 ```
+## [5-is_the_host_on_the_network](5-is_the_host_on_the_network)
