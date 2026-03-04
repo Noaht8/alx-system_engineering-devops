@@ -166,12 +166,12 @@ Let’s fill the empty parts in the drawing above.
 
 Questions:
 
-Which statement is correct for the TCP box:
-It is a protocol that is transferring data in a slow way but surely
-It is a protocol that is transferring data in a fast way and might loss data along in the process
-Which statement is correct for the UDP box:
-It is a protocol that is transferring data in a slow way but surely
-It is a protocol that is transferring data in a fast way and might loss data along in the process
-Which statement is correct for the TCP worker:
-Have you received boxes x, y, z?
-May I increase the rate at which I am sending you boxes?
+- Which statement is correct for the TCP box:
+  1. `It is a protocol that is transferring data in a slow way but surely`
+  2. `It is a protocol that is transferring data in a fast way and might loss data along in the process`
+- Which statement is correct for the UDP box:
+  1. `It is a protocol that is transferring data in a slow way but surely`
+  2. `It is a protocol that is transferring data in a fast way and might loss data along in the process`
+- Which statement is correct for the TCP worker:
+  1. `Have you received boxes x, y, z?`
+  2. `May I increase the rate at which I am sending you boxes?`
