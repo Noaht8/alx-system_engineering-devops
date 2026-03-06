@@ -109,3 +109,11 @@ Obviously, the IPs displayed may be different depending on which machine you are
 Note that we can see our `localhost` IP :)
 
 ## [100-port_listening_on_localhost](100-port_listening_on_localhost)
+Write a Bash script that listens on port `98` on `localhost`.
+
+### Terminal 0
+
+Starting my script.
+```
+sylvain@ubuntu$ sudo ./100-port_listening_on_localhost
+```
