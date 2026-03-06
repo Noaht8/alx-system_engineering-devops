@@ -93,3 +93,5 @@ In this example we can see that:
 - after running the script, `localhost` resolves to `127.0.0.2` and `facebook.com` resolves to `8.8.8.8`
 
 If you’re running this script on a machine that you’ll continue to use, be sure to revert `localhost` to `127.0.0.1`. Otherwise, a lot of things will stop working!
+
+## [1-show_attached_IPs](1-show_attached_IPs)
