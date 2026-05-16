@@ -16,3 +16,6 @@ This is a perfect example of a task that is not suited for Bash scripting, so le
 - [What is a REST API](https://www.sitepoint.com/rest-api/)
 - [What are microservices](https://smartbear.com/learn/api-design/microservices/)
 - [PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry](https://peps.python.org/pep-0008/)
+
+## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google:**
